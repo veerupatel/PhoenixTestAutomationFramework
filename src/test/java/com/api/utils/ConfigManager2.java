@@ -9,12 +9,20 @@ public class ConfigManager2 {
 
 	private static Properties prop;
 	private static String path = "config" + File.separator + "config.properties";
+	private static String env;
 
 	private ConfigManager2() {
 
 	}
 
 	static {
+		System.out.println(env =System.getProperty(env));
+		switch (env) {
+		case "dev" ->	path = "config" + File.separator + "config.dev.properties";
+		case "qa" ->	path = "config" + File.separator + "config.qa.properties";
+		case "uat" ->	path = "config" + File.separator + "config.uat.properties";
+		default -> path =  "config" + File.separator + "config.qa.properties";
+		}
 		prop = new Properties();
 		InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream(path);
 		if (input == null) {
