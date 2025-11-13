@@ -16,7 +16,9 @@ public class ConfigManager2 {
 	}
 
 	static {
-		System.out.println(env =System.getProperty(env));
+		env =System.getProperty("env", "qa");
+		env= env.toLowerCase().trim();
+		System.out.println(env + "Enviornment is Runngin" + path);
 		switch (env) {
 		case "dev" ->	path = "config" + File.separator + "config.dev.properties";
 		case "qa" ->	path = "config" + File.separator + "config.qa.properties";
