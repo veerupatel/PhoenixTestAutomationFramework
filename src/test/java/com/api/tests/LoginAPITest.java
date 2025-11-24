@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import com.api.utils.ConfigManager;
 import com.api.utils.ConfigManager2;
+import com.api.utils.SpecUtil;
 import com.request.models.UserCredentials;
 
 import io.restassured.RestAssured;
@@ -16,20 +17,12 @@ public class LoginAPITest {
 	@Test
 	public void loginAPITest() {
 		UserCredentials credentials = new UserCredentials("iamfd", "password");
-		RestAssured.given().baseUri(ConfigManager2.getProperty("BASE_URL"))
-		.contentType(ContentType.JSON)
-		.accept(ContentType.JSON)
-		.body(credentials)
-		.log().uri()
-		.log().method()
-		.log().headers()
-		.log().body()
+		RestAssured.given()
+		.spec(SpecUtil.requestSpec(credentials))
 		.when()
 		.post("login")
 		.then()
-		.log().all()
-		.statusCode(200)
-		.time(Matchers.lessThan(1500L))
+		.spec(SpecUtil.resposeSpec_OK())
 		.body("message", Matchers.equalTo("Success"))
 		.body("data.token", Matchers.notNullValue())
 		.extract().response();
