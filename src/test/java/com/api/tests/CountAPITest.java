@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.api.constants.Roles;
 import com.api.utils.AuthTokenProvider;
 import com.api.utils.ConfigManager2;
+import com.api.utils.SpecUtil;
 
 import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
@@ -15,14 +16,11 @@ public class CountAPITest {
 	@Test
 	public void verifyCountAPITest() {
 		RestAssured.given()
-		.baseUri(ConfigManager2.getProperty("BASE_URL"))
-		.header("Authorization", AuthTokenProvider.getToken(Roles.FD))
+	.spec(SpecUtil.requestSpecificationWithAuth(Roles.FD))
 		.when()
 		.get("/dashboard/count")
 		.then()
-		.log()
-		.all()
-		.statusCode(200)
+		.spec(SpecUtil.resposeSpec_OK())
 		.body("message", Matchers.equalTo("Success"))
 		.time(Matchers.lessThan(1000L))
 		.body("data", Matchers.notNullValue())
@@ -36,13 +34,11 @@ public class CountAPITest {
 	@Test
 	public void countAPITest_MissingAuthToken() {
 		RestAssured.given()
-		.baseUri(ConfigManager2.getProperty("BASE_URL"))
+		.spec(SpecUtil.requestSpec())
 		.when()
 		.get("/dashboard/count")
 		.then()
-		.log()
-		.all()
-		.statusCode(401);
+		.spec(SpecUtil.resposeSpec_TEXT(401));
 	}
 
 }
