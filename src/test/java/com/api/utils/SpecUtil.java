@@ -64,7 +64,7 @@ public class SpecUtil {
 			.setContentType(ContentType.JSON)
 			.setAccept(ContentType.JSON)
 			.addHeader("Authorization", AuthTokenProvider.getToken(role))
-			.setBody(payload)
+			//.setBody(payload)
 			.log(LogDetail.URI)
 			.log(LogDetail.METHOD)
 			.log(LogDetail.HEADERS)

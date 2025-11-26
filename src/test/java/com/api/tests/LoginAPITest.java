@@ -10,6 +10,7 @@ import com.request.models.UserCredentials;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class LoginAPITest {
 	
@@ -25,6 +26,7 @@ public class LoginAPITest {
 		.spec(SpecUtil.resposeSpec_OK())
 		.body("message", Matchers.equalTo("Success"))
 		.body("data.token", Matchers.notNullValue())
+		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("response-Schema/LoginAPIResponseSchema.json"))
 		.extract().response();
 	}
 
