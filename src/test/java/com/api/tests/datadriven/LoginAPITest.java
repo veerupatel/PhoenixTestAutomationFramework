@@ -1,4 +1,4 @@
-package com.api.tests;
+package com.api.tests.datadriven;
 
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.api.utils.ConfigManager;
 import com.api.utils.ConfigManager2;
 import com.api.utils.SpecUtil;
+import com.dataproviders.api.bean.UserBean;
 import com.request.models.UserCredentials;
 
 import io.restassured.RestAssured;
@@ -15,11 +16,13 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 public class LoginAPITest {
 	
 	
-	@Test
-	public void loginAPITest() {
-		UserCredentials credentials = new UserCredentials("iamfd", "password");
+	@Test(description = "Verifying if login api is working for FD user"
+			,groups= {"api","regression","smoke","datadriven"}
+	,dataProviderClass = com.dataproviders.DataProviderUtils.class,dataProvider = "LoginAPIDataProvider")
+	public void loginAPITest(UserBean userbean) {
+		
 		RestAssured.given()
-		.spec(SpecUtil.requestSpec(credentials))
+		.spec(SpecUtil.requestSpec(userbean))
 		.when()
 		.post("login")
 		.then()

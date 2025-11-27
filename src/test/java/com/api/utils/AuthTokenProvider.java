@@ -25,8 +25,9 @@ public class AuthTokenProvider {
 			userCredentials = new UserCredentials("iameng", "password");
 		}
 
-		String token = RestAssured.given().baseUri(ConfigManager2.getProperty("BASE_URL")).contentType(ContentType.JSON)
-				.accept(ContentType.JSON).body(userCredentials).when().post("login").then().log().ifValidationFails()
+		String token = RestAssured.given()
+				.spec(SpecUtil.requestSpec())
+				.body(userCredentials).when().post("login").then().log().ifValidationFails()
 				.statusCode(200).extract().jsonPath().getString("data.token");
 		System.out.println(token);
 
