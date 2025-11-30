@@ -13,7 +13,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
-public class LoginAPITest {
+public class LoginAPIDataDrivenTest {
 	
 	
 	@Test(description = "Verifying if login api is working for FD user"

@@ -1,17 +1,38 @@
 package com.dataproviders;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import org.testng.annotations.DataProvider;
 
 import com.api.utils.CSVreaderUtility;
+import com.api.utils.CreateJobBeanMapper;
+import com.dataproviders.api.bean.CreateJobBean;
 import com.dataproviders.api.bean.UserBean;
+import com.request.models.CreateJobPayload;
 
 public class DataProviderUtils {
-	
-	@DataProvider(name="LoginAPIDataProvider",parallel = true)
+
+	@DataProvider(name = "LoginAPIDataProvider", parallel = true)
 	public static Iterator<UserBean> loginAPIDataprovider() {
-		return CSVreaderUtility.loadCSV("testData/loginData.csv");
+		return CSVreaderUtility.loadCSV("testData/loginData.csv", UserBean.class);
+	}
+
+	@DataProvider(name = "CreateJobAPIDataProvider", parallel = true)
+	public static Iterator<CreateJobPayload> createJobAPIDataProvider() {
+		Iterator<CreateJobBean> createJobBeanIterator = CSVreaderUtility.loadCSV("testData/createJobData.csv",
+				CreateJobBean.class);
+		List<CreateJobPayload> payloadList = new ArrayList<CreateJobPayload>();
+		CreateJobBean tempBean;
+		CreateJobPayload tempPayload;
+		while (createJobBeanIterator.hasNext()) {
+			tempBean = createJobBeanIterator.next();
+			tempPayload = CreateJobBeanMapper.mapper(tempBean);
+			payloadList.add(tempPayload);
+		}
+		return payloadList.iterator();
+
 	}
 
 }
