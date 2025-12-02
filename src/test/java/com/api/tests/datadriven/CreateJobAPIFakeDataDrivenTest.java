@@ -13,7 +13,7 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class CreateJobAPIFakeDataDrivenTest {
 
-	@Test(dataProviderClass = com.dataproviders.DataProviderUtils.class,dataProvider = "CreateJobAPIFakeDataProvider")
+	@Test(dataProviderClass = com.dataproviders.DataProviderUtils.class,dataProvider = "CreateJobAPIFakeDataProvider",groups = {"faker","datadriven","smoke","integration"})
 	public void createJobAPITest(CreateJobPayload createJobPayload ) {
 
 		RestAssured.given().spec(SpecUtil.requestSpecificationWithAuth(Roles.FD)).body(createJobPayload).when()
