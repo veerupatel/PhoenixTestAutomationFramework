@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Phoenix API Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Inwarranty Flow - Data Driven Tests(failed)">
     <classes>
-      <class name="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest">
+      <class name="com.api.tests.datadriven.LoginAPIDataDrivenTest">
         <methods>
-          <include name="createJobAPITest" invocation-numbers="96 1 3 67 99 68 5 39 11 75 44 78 79 80 19 52 23 56 58 90 62 94 63"/>
+          <include name="loginAPITest" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest -->
+      </class> <!-- com.api.tests.datadriven.LoginAPIDataDrivenTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Inwarranty Flow - Data Driven Tests(failed) -->
+</suite> <!-- Failed suite [Phoenix API Test Suite] -->
