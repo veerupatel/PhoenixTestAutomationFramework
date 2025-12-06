@@ -73,7 +73,7 @@ public class FakerDataGenerator {
 	}
 
 	public static CustomerProduct generateFakerCustomerProductData() {
-		String dop = DateTimeUtil.getTimewithDaysAgo(10);
+		String dop = DateTimeUtil.getTimeWithDaysAgo(10);
 		String imeiSerialNumber = faker.numerify("###############");
 		String popURL = faker.internet().url();
 		CustomerProduct customerProduct = new CustomerProduct(dop, imeiSerialNumber, imeiSerialNumber, imeiSerialNumber,
