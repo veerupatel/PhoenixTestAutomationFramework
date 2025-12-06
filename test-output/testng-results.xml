@@ -1,39 +1,374 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="23" passed="21" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-24T15:59:03 IST" name="Phoenix API Test Suite" finished-at="2025-11-24T15:59:10 IST" duration-ms="7089">
+  <suite started-at="2025-12-05T11:16:16 IST" name="Phoenix API Test Suite" finished-at="2025-12-05T11:16:31 IST" duration-ms="14701">
     <groups>
+      <group name="datadriven">
+        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1ed4ae0f]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
+        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@1e6a3214]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@54c5a2ff]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
+      </group> <!-- datadriven -->
+      <group name="regression">
+        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@1e6a3214]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@54c5a2ff]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
+      </group> <!-- regression -->
+      <group name="faker">
+        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1ed4ae0f]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
+      </group> <!-- faker -->
+      <group name="integration">
+        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1ed4ae0f]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
+      </group> <!-- integration -->
+      <group name="smoke">
+        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1ed4ae0f]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
+        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@1e6a3214]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@54c5a2ff]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
+      </group> <!-- smoke -->
+      <group name="api">
+        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@1e6a3214]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@54c5a2ff]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
+      </group> <!-- api -->
     </groups>
-    <test started-at="2025-11-24T15:59:03 IST" name="Inwarranty Flow" finished-at="2025-11-24T15:59:10 IST" duration-ms="7089">
-      <class name="com.api.tests.MasterAPITest">
-        <test-method signature="verifyMasterAPITest()[pri:0, instance:com.api.tests.MasterAPITest@3646a422]" started-at="2025-11-24T15:59:10 IST" name="verifyMasterAPITest" finished-at="2025-11-24T15:59:10 IST" duration-ms="386" status="PASS">
+    <test started-at="2025-12-05T11:16:16 IST" name="Inwarranty Flow - Data Driven Tests" finished-at="2025-12-05T11:16:31 IST" duration-ms="14701">
+      <class name="com.api.tests.datadriven.CreateJobAPIDataDrivenTest">
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@7526515b]" started-at="2025-12-05T11:16:23 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2025-12-05T11:16:27 IST" duration-ms="3452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356911, imei1=876545654356911, imei2=876545654356911, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMasterAPITest -->
-      </class> <!-- com.api.tests.MasterAPITest -->
-      <class name="com.api.tests.CountAPITest">
-        <test-method signature="countAPITest_MissingAuthToken()[pri:0, instance:com.api.tests.CountAPITest@5ab956d7]" started-at="2025-11-24T15:59:09 IST" name="countAPITest_MissingAuthToken" finished-at="2025-11-24T15:59:09 IST" duration-ms="382" status="PASS">
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@7526515b]" started-at="2025-12-05T11:16:23 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2025-12-05T11:16:25 IST" duration-ms="2367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356909, imei1=876545654356909, imei2=876545654356909, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- countAPITest_MissingAuthToken -->
-        <test-method signature="verifyCountAPITest()[pri:0, instance:com.api.tests.CountAPITest@5ab956d7]" started-at="2025-11-24T15:59:09 IST" name="verifyCountAPITest" finished-at="2025-11-24T15:59:10 IST" duration-ms="662" status="PASS">
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@7526515b]" started-at="2025-12-05T11:16:23 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2025-12-05T11:16:26 IST" duration-ms="2467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356910, imei1=876545654356910, imei2=876545654356910, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCountAPITest -->
-      </class> <!-- com.api.tests.CountAPITest -->
-      <class name="com.api.tests.UserDetailsAPITest">
-        <test-method signature="UserDetailsAPITest()[pri:0, instance:com.api.tests.UserDetailsAPITest@2892d68]" started-at="2025-11-24T15:59:08 IST" name="UserDetailsAPITest" finished-at="2025-11-24T15:59:09 IST" duration-ms="887" status="PASS">
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@7526515b]" started-at="2025-12-05T11:16:23 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2025-12-05T11:16:26 IST" duration-ms="2402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356906, imei1=876545654356906, imei2=876545654356906, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserDetailsAPITest -->
-      </class> <!-- com.api.tests.UserDetailsAPITest -->
-      <class name="com.api.tests.LoginAPITest">
-        <test-method signature="loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@13e344d]" started-at="2025-11-24T15:59:03 IST" name="loginAPITest" finished-at="2025-11-24T15:59:08 IST" duration-ms="4653" status="PASS">
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@7526515b]" started-at="2025-12-05T11:16:23 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2025-12-05T11:16:26 IST" duration-ms="2455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356908, imei1=876545654356908, imei2=876545654356908, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@7526515b]" started-at="2025-12-05T11:16:23 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2025-12-05T11:16:27 IST" duration-ms="3438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356907, imei1=876545654356907, imei2=876545654356907, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+      </class> <!-- com.api.tests.datadriven.CreateJobAPIDataDrivenTest -->
+      <class name="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest">
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@54c5a2ff]" started-at="2025-12-05T11:16:29 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2025-12-05T11:16:29 IST" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials[username=iamsup, password=password]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAPITest -->
-      </class> <!-- com.api.tests.LoginAPITest -->
-    </test> <!-- Inwarranty Flow -->
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@54c5a2ff]" started-at="2025-12-05T11:16:29 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2025-12-05T11:16:29 IST" duration-ms="267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials[username=iamfd, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@54c5a2ff]" started-at="2025-12-05T11:16:29 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2025-12-05T11:16:29 IST" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials[username=iameng, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@54c5a2ff]" started-at="2025-12-05T11:16:29 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2025-12-05T11:16:29 IST" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials[username=iamqc, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+      </class> <!-- com.api.tests.datadriven.LoginAPIJsonDataDrivenTest -->
+      <class name="com.api.tests.datadriven.LoginAPIDataDrivenTest">
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@1e6a3214]" started-at="2025-12-05T11:16:17 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2025-12-05T11:16:23 IST" duration-ms="6217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserBean [username=iamqc, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@1e6a3214]" started-at="2025-12-05T11:16:17 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2025-12-05T11:16:23 IST" duration-ms="6050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserBean [username=iameng, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@1e6a3214]" started-at="2025-12-05T11:16:17 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2025-12-05T11:16:22 IST" duration-ms="5345" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserBean [username=iamsup, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected response time was not a value less than <1500L> milliseconds, was 1520 milliseconds (1520 milliseconds).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than <1500L> milliseconds, was 1520 milliseconds (1520 milliseconds).
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.LoginAPIDataDrivenTest.loginAPITest(LoginAPIDataDrivenTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@1e6a3214]" started-at="2025-12-05T11:16:17 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2025-12-05T11:16:22 IST" duration-ms="5344" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserBean [username=iamfd, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected response time was not a value less than <1500L> milliseconds, was 1516 milliseconds (1516 milliseconds).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than <1500L> milliseconds, was 1516 milliseconds (1516 milliseconds).
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.LoginAPIDataDrivenTest.loginAPITest(LoginAPIDataDrivenTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+      </class> <!-- com.api.tests.datadriven.LoginAPIDataDrivenTest -->
+      <class name="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest">
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1ed4ae0f]" started-at="2025-12-05T11:16:27 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2025-12-05T11:16:28 IST" duration-ms="979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Jitender, last_name=Gupta, mobile_number=707551497, mobile_number_alt=700172240, email_id=dhanu.saini@yahoo.co.in, email_id_alt=somnath.nayar@gmail.com], customer_address=CustomerAddress[flat_number=807, apartment_name=Shwet Glens, street_name=Saini Groves, landmark=Khatri Bridge, area=Prajapat Row, pincode=09727, country=Tamil Nadu, state=India], customer_product=CustomerProduct[dop=2025-11-25T05:46:27.434422400Z, serial_number=258041267227321, imei1=258041267227321, imei2=258041267227321, popurl=www.mohinder-joshi.net, product_id=1, mst_model_id=1], problems=[Problems[id=5, remark=Ipsum dignissimos velit vero fugiat sit veniam ea qui quasi.], Problems[id=12, remark=Dolores dolore aperiam quam pariatur explicabo vitae sed et necessitatibus.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1ed4ae0f]" started-at="2025-12-05T11:16:27 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2025-12-05T11:16:28 IST" duration-ms="979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Vedanga, last_name=Talwar, mobile_number=707684033, mobile_number_alt=703881437, email_id=shashi.prajapat@yahoo.co.in, email_id_alt=gauranga.nambeesan@yahoo.co.in], customer_address=CustomerAddress[flat_number=913, apartment_name=Iyengar Isle, street_name=Tushar Fork, landmark=Somayaji Mill, area=Menka Coves, pincode=69918, country=Jharkhand, state=India], customer_product=CustomerProduct[dop=2025-11-25T05:46:27.396523500Z, serial_number=677514304526073, imei1=677514304526073, imei2=677514304526073, popurl=www.ghanaanand-menon.biz, product_id=1, mst_model_id=1], problems=[Problems[id=11, remark=Sit dolor sit accusamus dolores accusamus quis exercitationem.], Problems[id=8, remark=Ipsam harum saepe et exercitationem ratione repellat assumenda ratione tempora.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1ed4ae0f]" started-at="2025-12-05T11:16:27 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2025-12-05T11:16:28 IST" duration-ms="699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Himadri, last_name=Menon, mobile_number=700101669, mobile_number_alt=708953882, email_id=apsara.johar@gmail.com, email_id_alt=bhanumati.deshpande@gmail.com], customer_address=CustomerAddress[flat_number=878, apartment_name=Jagadisha Hills, street_name=Dutta Fall, landmark=Guha Walks, area=Anand Walk, pincode=92889, country=Pondicherry, state=India], customer_product=CustomerProduct[dop=2025-11-25T05:46:27.441405200Z, serial_number=401556891383639, imei1=401556891383639, imei2=401556891383639, popurl=www.ghanshyam-mehra.org, product_id=1, mst_model_id=1], problems=[Problems[id=6, remark=Laborum vel asperiores voluptatem iure consequatur accusantium quo velit error.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1ed4ae0f]" started-at="2025-12-05T11:16:27 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2025-12-05T11:16:29 IST" duration-ms="1902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Gautam, last_name=Rana, mobile_number=703699131, mobile_number_alt=700394595, email_id=chetanaanand.asan@hotmail.com, email_id_alt=menka.panicker@hotmail.com], customer_address=CustomerAddress[flat_number=841, apartment_name=Arjun Park, street_name=Chakravarti Crossroad, landmark=Tara Loaf, area=Marar Manor, pincode=96101, country=Jammu and Kashmir, state=India], customer_product=CustomerProduct[dop=2025-11-25T05:46:27.444398400Z, serial_number=647977657302306, imei1=647977657302306, imei2=647977657302306, popurl=www.ganak-mehra.in, product_id=1, mst_model_id=1], problems=[Problems[id=6, remark=Sit necessitatibus velit aperiam voluptas.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1ed4ae0f]" started-at="2025-12-05T11:16:27 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2025-12-05T11:16:29 IST" duration-ms="1796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Hiranmaya, last_name=Butt, mobile_number=709701300, mobile_number_alt=702731954, email_id=devangana.joshi@yahoo.co.in, email_id_alt=chandrabhan.arora@gmail.com], customer_address=CustomerAddress[flat_number=506, apartment_name=Shreyashi Mission, street_name=Yoginder Ville, landmark=Subodh Parkway, area=Bhoopat Corners, pincode=72598, country=Assam, state=India], customer_product=CustomerProduct[dop=2025-11-25T05:46:27.446391200Z, serial_number=004536428532596, imei1=004536428532596, imei2=004536428532596, popurl=www.chandrabhaga-trivedi.in, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Suscipit sunt numquam iure dolores eligendi.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+      </class> <!-- com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest -->
+      <class name="com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest">
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@6d4d66d2]" started-at="2025-12-05T11:16:29 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2025-12-05T11:16:30 IST" duration-ms="702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravinra, last_name=Yadav, mobile_number=8448752554, mobile_number_alt=, email_id=ravindra@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=sai, apartment_name=disck, street_name=gali no 3, landmark=noda, area=gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-30T18:30:00.000Z, serial_number=806565432211234, imei1=806565432211234, imei2=806565432211234, popurl=2025-11-30T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=ggggg]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@6d4d66d2]" started-at="2025-12-05T11:16:29 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2025-12-05T11:16:30 IST" duration-ms="668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravinra, last_name=Yadav, mobile_number=8448752554, mobile_number_alt=, email_id=ravindra@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=sai, apartment_name=disck, street_name=gali no 3, landmark=noda, area=gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-30T18:30:00.000Z, serial_number=806565432311234, imei1=806565432311234, imei2=806565432311234, popurl=2025-11-30T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=ggggg]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@6d4d66d2]" started-at="2025-12-05T11:16:29 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2025-12-05T11:16:30 IST" duration-ms="486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravinra, last_name=Yadav, mobile_number=8448752554, mobile_number_alt=, email_id=ravindra@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=sai, apartment_name=disck, street_name=gali no 3, landmark=noda, area=gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-30T18:30:00.000Z, serial_number=806565432411234, imei1=806565432411234, imei2=806565432411234, popurl=2025-11-30T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=ggggg]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@6d4d66d2]" started-at="2025-12-05T11:16:29 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2025-12-05T11:16:31 IST" duration-ms="1685" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravinra, last_name=Yadav, mobile_number=8448752554, mobile_number_alt=, email_id=ravindra@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=sai, apartment_name=disck, street_name=gali no 3, landmark=noda, area=gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-30T18:30:00.000Z, serial_number=806565432511234, imei1=806565432511234, imei2=806565432511234, popurl=2025-11-30T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=ggggg]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+      </class> <!-- com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest -->
+    </test> <!-- Inwarranty Flow - Data Driven Tests -->
   </suite> <!-- Phoenix API Test Suite -->
 </testng-results>

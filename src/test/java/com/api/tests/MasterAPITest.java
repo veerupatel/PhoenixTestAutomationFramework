@@ -9,6 +9,7 @@ import com.api.utils.SpecUtil;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class MasterAPITest {
 
@@ -18,6 +19,7 @@ public class MasterAPITest {
 		.spec(SpecUtil.requestSpecificationWithAuth(Roles.FD))
 		.when().post("master").then()
 		.spec(SpecUtil.resposeSpec_OK())
+		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("response-Schema/MasterAPIResponseSchema.json"))
 		.extract().response();
 	}
 
