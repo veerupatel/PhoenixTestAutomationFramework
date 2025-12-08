@@ -1,24 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-02T13:04:01 IST" name="Default suite" finished-at="2025-12-02T13:04:07 IST" duration-ms="5332">
+  <suite started-at="2025-12-08T12:24:54 IST" name="Default suite" finished-at="2025-12-08T12:25:01 IST" duration-ms="6949">
     <groups>
+      <group name="datadriven">
+        <method signature="LoginAPIExcelDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest"/>
+      </group> <!-- datadriven -->
+      <group name="regression">
+        <method signature="LoginAPIExcelDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginAPIExcelDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest"/>
+      </group> <!-- smoke -->
+      <group name="api">
+        <method signature="LoginAPIExcelDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest"/>
+      </group> <!-- api -->
     </groups>
-    <test started-at="2025-12-02T13:04:01 IST" name="Default test" finished-at="2025-12-02T13:04:07 IST" duration-ms="5332">
-      <class name="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest">
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@368247b9]" started-at="2025-12-02T13:04:02 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2025-12-02T13:04:07 IST" duration-ms="4852" status="PASS">
+    <test started-at="2025-12-08T12:24:54 IST" name="Default test" finished-at="2025-12-08T12:25:01 IST" duration-ms="6949">
+      <class name="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest">
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" started-at="2025-12-08T12:24:55 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelDataProvider" finished-at="2025-12-08T12:24:59 IST" duration-ms="4252" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Dipali, last_name=Desai, mobile_number=702986708, mobile_number_alt=709856837, email_id=deepankar.reddy@yahoo.co.in, email_id_alt=deeptiman.mishra@gmail.com], customer_address=CustomerAddress[flat_number=922, apartment_name=Umang Lake, street_name=Devangana Island, landmark=Avadhesh Glen, area=Pothuvaal Fields, pincode=48692, country=Andaman and Nicobar Islands, state=India], customer_product=CustomerProduct[dop=2025-11-22T07:34:02.344061100Z, serial_number=897881897685834, imei1=897881897685834, imei2=897881897685834, popurl=www.chidambaram-chaturvedi.in, product_id=1, mst_model_id=1], problems=[Problems[id=8, remark=Doloremque voluptatem molestiae sapiente ex placeat.], Problems[id=9, remark=Ducimus officia cum quidem et enim aliquam aperiam.], Problems[id=6, remark=Ut corporis consequuntur ducimus saepe itaque.]]]]]>
+                <![CDATA[UserCredentials [username=iamfd, password=password]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createJobAPITest -->
-      </class> <!-- com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest -->
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" started-at="2025-12-08T12:24:55 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelDataProvider" finished-at="2025-12-08T12:25:00 IST" duration-ms="5214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials [username=iamqc, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" started-at="2025-12-08T12:24:55 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelDataProvider" finished-at="2025-12-08T12:25:01 IST" duration-ms="5671" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials [username=iameng, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" started-at="2025-12-08T12:24:55 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelDataProvider" finished-at="2025-12-08T12:25:00 IST" duration-ms="4686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials [username=iamsup, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+      </class> <!-- com.api.tests.datadriven.LoginAPIExcelDataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
