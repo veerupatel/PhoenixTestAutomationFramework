@@ -5,11 +5,17 @@
 		<classes>
 			<class name="com.api.tests.datadriven.LoginAPIDataDrivenTest" />
 			<class name="com.api.tests.datadriven.CreateJobAPIDataDrivenTest" />
-			<class name="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest" />
+			<class
+				name="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest" />
 			<class name="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest" />
-			<class name="com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest" />
-			
-			</classes>
+			<class
+				name="com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest" />
+			<class
+				name="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest" />
+			<class
+				name="com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest" />
+
+		</classes>
 	</test> <!--
 	Test -->
 </suite> <!--
