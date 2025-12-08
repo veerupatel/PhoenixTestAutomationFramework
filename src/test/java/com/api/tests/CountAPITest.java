@@ -4,8 +4,6 @@ import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
-import com.api.utils.AuthTokenProvider;
-import com.api.utils.ConfigManager2;
 import com.api.utils.SpecUtil;
 
 import io.restassured.RestAssured;

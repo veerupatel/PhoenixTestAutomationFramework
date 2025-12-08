@@ -8,6 +8,7 @@ import org.testng.annotations.DataProvider;
 
 import com.api.utils.CSVreaderUtility;
 import com.api.utils.CreateJobBeanMapper;
+import com.api.utils.ExcelReaderFromPoijiUtil;
 import com.api.utils.ExcelReaderUtil;
 import com.api.utils.FakerDataGenerator;
 import com.api.utils.JsonReaderUtil;
@@ -47,12 +48,11 @@ public class DataProviderUtils {
 		return payloadIterator;
 	}
 
-<<<<<<< HEAD
 	@DataProvider(name = "LoginAPIExcelDataProvider", parallel = true)
 	public static Iterator<UserCredentials> LoginAPIExcelDataProvider() {
 		return ExcelReaderUtil.loadTestData();
 	}
-=======
+
 	@DataProvider(name = "LoginAPIJsonDataProvider", parallel = true)
 	public static Iterator<UserCredentials> LoginAPIJsonDataProvider() {
 		return JsonReaderUtil.loadJSON("testData/loginAPIData.json", UserCredentials[].class);
@@ -63,5 +63,14 @@ public class DataProviderUtils {
 		return JsonReaderUtil.loadJSON("testData/createJobAPIData.json", CreateJobPayload[].class);
 	}
 
->>>>>>> 4105951014d7530cfd0c44a76e13f7e930f6eece
+	@DataProvider(name = "LoginAPIExcelPoijiDataProvider", parallel = true)
+	public static Iterator<UserBean> LoginAPIExcelPoijiDataProvider() {
+		return ExcelReaderFromPoijiUtil.loadTestData("testData/PhoenixTestData.xlsx","Sheet1",UserBean.class);
+	}
+	
+	@DataProvider(name = "CreateJobAPIExcelPoijiDataProvider", parallel = true)
+	public static Iterator<CreateJobBean> CreateJobAPIExcelPoijiDataProvider() {
+		return ExcelReaderFromPoijiUtil.loadTestData("testData/PhoenixcreateJobData.xls","Sheet1",CreateJobBean.class);
+	}
+
 }

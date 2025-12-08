@@ -4,7 +4,6 @@ import com.api.constants.Roles;
 import com.request.models.UserCredentials;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 
 public class AuthTokenProvider {
 
