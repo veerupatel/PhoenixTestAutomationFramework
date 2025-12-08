@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest">
         <methods>
           <include name="loginAPITest" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- com.api.tests.datadriven.LoginAPIExcelDataDrivenTest -->
+=======
+      <class name="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest">
+        <methods>
+          <include name="loginAPITest"/>
+        </methods>
+      </class> <!-- com.api.tests.datadriven.LoginAPIJsonDataDrivenTest -->
+>>>>>>> 4105951014d7530cfd0c44a76e13f7e930f6eece
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
