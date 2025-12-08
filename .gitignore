@@ -1,2 +1,64 @@
-/target/
+##############################
+# Maven / Gradle Build Files
+##############################
+target/
+build/
+out/
+!.mvn/wrapper/maven-wrapper.jar
+
+##############################
+# Test Output & Reports
+##############################
 test-output/
+surefire-reports/
+failsafe-reports/
+allure-results/
+allure-report/
+logs/
+*.log
+
+##############################
+# IntelliJ IDEA
+##############################
+.idea/
+*.iml
+*.iws
+*.ipr
+
+##############################
+# Eclipse
+##############################
+.project
+.classpath
+.settings/
+
+##############################
+# VS Code
+##############################
+.vscode/
+
+##############################
+# OS Specific
+##############################
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+##############################
+# Java Specific
+##############################
+*.class
+*.jar
+*.war
+*.ear
+
+##############################
+# Environment / Credentials
+##############################
+.env
+*.properties.local
+*.secret
+*.key
+*.pem
