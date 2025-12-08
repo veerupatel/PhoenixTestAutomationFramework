@@ -47,12 +47,12 @@ public class DataProviderUtils {
 		return payloadIterator;
 	}
 
-<<<<<<< HEAD
+
 	@DataProvider(name = "LoginAPIExcelDataProvider", parallel = true)
 	public static Iterator<UserCredentials> LoginAPIExcelDataProvider() {
 		return ExcelReaderUtil.loadTestData();
 	}
-=======
+
 	@DataProvider(name = "LoginAPIJsonDataProvider", parallel = true)
 	public static Iterator<UserCredentials> LoginAPIJsonDataProvider() {
 		return JsonReaderUtil.loadJSON("testData/loginAPIData.json", UserCredentials[].class);
@@ -63,5 +63,5 @@ public class DataProviderUtils {
 		return JsonReaderUtil.loadJSON("testData/createJobAPIData.json", CreateJobPayload[].class);
 	}
 
->>>>>>> 4105951014d7530cfd0c44a76e13f7e930f6eece
+
 }
