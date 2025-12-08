@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-08T12:24:54 IST" name="Default suite" finished-at="2025-12-08T12:25:01 IST" duration-ms="6949">
+    <groups>
+      <group name="datadriven">
+        <method signature="LoginAPIExcelDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest"/>
+      </group> <!-- datadriven -->
+      <group name="regression">
+        <method signature="LoginAPIExcelDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginAPIExcelDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest"/>
+      </group> <!-- smoke -->
+      <group name="api">
+        <method signature="LoginAPIExcelDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest"/>
+      </group> <!-- api -->
+    </groups>
+    <test started-at="2025-12-08T12:24:54 IST" name="Default test" finished-at="2025-12-08T12:25:01 IST" duration-ms="6949">
+      <class name="com.api.tests.datadriven.LoginAPIExcelDataDrivenTest">
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" started-at="2025-12-08T12:24:55 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelDataProvider" finished-at="2025-12-08T12:24:59 IST" duration-ms="4252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials [username=iamfd, password=password]]]>
+=======
 <testng-results ignored="0" total="23" passed="21" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -316,11 +343,20 @@ at java.base/java.lang.Thread.run(Thread.java:840)
             <param index="0">
               <value>
                 <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Hiranmaya, last_name=Butt, mobile_number=709701300, mobile_number_alt=702731954, email_id=devangana.joshi@yahoo.co.in, email_id_alt=chandrabhan.arora@gmail.com], customer_address=CustomerAddress[flat_number=506, apartment_name=Shreyashi Mission, street_name=Yoginder Ville, landmark=Subodh Parkway, area=Bhoopat Corners, pincode=72598, country=Assam, state=India], customer_product=CustomerProduct[dop=2025-11-25T05:46:27.446391200Z, serial_number=004536428532596, imei1=004536428532596, imei2=004536428532596, popurl=www.chandrabhaga-trivedi.in, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Suscipit sunt numquam iure dolores eligendi.]]]]]>
+>>>>>>> 4105951014d7530cfd0c44a76e13f7e930f6eece
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" started-at="2025-12-08T12:24:55 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelDataProvider" finished-at="2025-12-08T12:25:00 IST" duration-ms="5214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials [username=iamqc, password=password]]]>
+=======
         </test-method> <!-- createJobAPITest -->
       </class> <!-- com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest -->
       <class name="com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest">
@@ -329,33 +365,58 @@ at java.base/java.lang.Thread.run(Thread.java:840)
             <param index="0">
               <value>
                 <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravinra, last_name=Yadav, mobile_number=8448752554, mobile_number_alt=, email_id=ravindra@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=sai, apartment_name=disck, street_name=gali no 3, landmark=noda, area=gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-30T18:30:00.000Z, serial_number=806565432211234, imei1=806565432211234, imei2=806565432211234, popurl=2025-11-30T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=ggggg]]]]]>
+>>>>>>> 4105951014d7530cfd0c44a76e13f7e930f6eece
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" started-at="2025-12-08T12:24:55 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelDataProvider" finished-at="2025-12-08T12:25:01 IST" duration-ms="5671" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials [username=iameng, password=password]]]>
+=======
         </test-method> <!-- createJobAPITest -->
         <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@6d4d66d2]" started-at="2025-12-05T11:16:29 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2025-12-05T11:16:30 IST" duration-ms="668" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravinra, last_name=Yadav, mobile_number=8448752554, mobile_number_alt=, email_id=ravindra@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=sai, apartment_name=disck, street_name=gali no 3, landmark=noda, area=gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-30T18:30:00.000Z, serial_number=806565432311234, imei1=806565432311234, imei2=806565432311234, popurl=2025-11-30T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=ggggg]]]]]>
+>>>>>>> 4105951014d7530cfd0c44a76e13f7e930f6eece
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelDataDrivenTest@46cdf8bd]" started-at="2025-12-08T12:24:55 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelDataProvider" finished-at="2025-12-08T12:25:00 IST" duration-ms="4686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials [username=iamsup, password=password]]]>
+=======
         </test-method> <!-- createJobAPITest -->
         <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@6d4d66d2]" started-at="2025-12-05T11:16:29 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2025-12-05T11:16:30 IST" duration-ms="486" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravinra, last_name=Yadav, mobile_number=8448752554, mobile_number_alt=, email_id=ravindra@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=sai, apartment_name=disck, street_name=gali no 3, landmark=noda, area=gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-30T18:30:00.000Z, serial_number=806565432411234, imei1=806565432411234, imei2=806565432411234, popurl=2025-11-30T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=ggggg]]]]]>
+>>>>>>> 4105951014d7530cfd0c44a76e13f7e930f6eece
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- loginAPITest -->
+      </class> <!-- com.api.tests.datadriven.LoginAPIExcelDataDrivenTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+=======
         </test-method> <!-- createJobAPITest -->
         <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@6d4d66d2]" started-at="2025-12-05T11:16:29 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2025-12-05T11:16:31 IST" duration-ms="1685" status="PASS">
           <params>
@@ -371,4 +432,5 @@ at java.base/java.lang.Thread.run(Thread.java:840)
       </class> <!-- com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest -->
     </test> <!-- Inwarranty Flow - Data Driven Tests -->
   </suite> <!-- Phoenix API Test Suite -->
+>>>>>>> 4105951014d7530cfd0c44a76e13f7e930f6eece
 </testng-results>
