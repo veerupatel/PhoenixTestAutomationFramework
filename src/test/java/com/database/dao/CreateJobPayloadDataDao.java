@@ -5,10 +5,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
-import com.database.DatabaseManager2;
+import com.database.DatabaseManager;
 import com.dataproviders.api.bean.CreateJobBean;
 
 public class CreateJobPayloadDataDao {
@@ -58,7 +57,7 @@ public class CreateJobPayloadDataDao {
 		List<CreateJobBean> beanList = new ArrayList<CreateJobBean>();
 
 		try {
-			conn = DatabaseManager2.getConnection();
+			conn = DatabaseManager.getConnection();
 			statement = conn.createStatement();
 			resultSet = statement.executeQuery(SQL_QUERY);
 
