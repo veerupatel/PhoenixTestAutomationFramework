@@ -14,6 +14,8 @@
 				name="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest" />
 			<class
 				name="com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest" />
+				<class
+				name="com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest" />
 
 		</classes>
 	</test> <!--

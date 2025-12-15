@@ -12,6 +12,7 @@ import com.api.utils.ExcelReaderFromPoijiUtil;
 import com.api.utils.ExcelReaderUtil;
 import com.api.utils.FakerDataGenerator;
 import com.api.utils.JsonReaderUtil;
+import com.database.dao.CreateJobPayloadDataDao;
 import com.dataproviders.api.bean.CreateJobBean;
 import com.dataproviders.api.bean.UserBean;
 import com.request.models.CreateJobPayload;
@@ -65,12 +66,26 @@ public class DataProviderUtils {
 
 	@DataProvider(name = "LoginAPIExcelPoijiDataProvider", parallel = true)
 	public static Iterator<UserBean> LoginAPIExcelPoijiDataProvider() {
-		return ExcelReaderFromPoijiUtil.loadTestData("testData/PhoenixTestData.xlsx","Sheet1",UserBean.class);
+		return ExcelReaderFromPoijiUtil.loadTestData("testData/PhoenixTestData.xlsx", "Sheet1", UserBean.class);
 	}
-	
+
 	@DataProvider(name = "CreateJobAPIExcelPoijiDataProvider", parallel = true)
 	public static Iterator<CreateJobBean> CreateJobAPIExcelPoijiDataProvider() {
-		return ExcelReaderFromPoijiUtil.loadTestData("testData/PhoenixcreateJobData.xls","Sheet1",CreateJobBean.class);
+		return ExcelReaderFromPoijiUtil.loadTestData("testData/PhoenixcreateJobData.xls", "Sheet1",
+				CreateJobBean.class);
+	}
+
+	@DataProvider(name = "CreateJobAPIDBDataProvider", parallel = true)
+	public static Iterator<CreateJobPayload> CreateJobAPIDBDataProvider() {
+		List<CreateJobBean> beanList = CreateJobPayloadDataDao.getCreateJobPayloadData();
+		List<CreateJobPayload> payloadList = new ArrayList<CreateJobPayload>();
+		for (CreateJobBean createJobBean : beanList) {
+			CreateJobPayload payload = CreateJobBeanMapper.mapper(createJobBean);
+			payloadList.add(payload);
+		}
+			
+
+		return payloadList.iterator();
 	}
 
 }
