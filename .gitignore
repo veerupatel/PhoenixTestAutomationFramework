@@ -53,7 +53,7 @@ Thumbs.db
 *.jar
 *.war
 *.ear
-
+*.env
 ##############################
 # Environment / Credentials
 ##############################
