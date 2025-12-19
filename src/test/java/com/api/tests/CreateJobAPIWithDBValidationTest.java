@@ -26,27 +26,25 @@ public class CreateJobAPIWithDBValidationTest {
 
 	@Test
 	public void createJobAPITest() {
-		 customer = new Customer("RajKumar", "Yadav", "9876543212", "", "rajkumar@gmail.com", "");
-		CustomerProduct customerProduct = new CustomerProduct("2025-11-02T18:30:00.000Z", "765432348687985", "765432348687985", "765432348687985", "2025-11-02T18:30:00.000Z", 1, 1);
-		CustomerAddress customerAddress = new CustomerAddress("51", "Sai Apartment", "Noida Sector 71", "near Noida sector 52 metro Station", "Gautam Buddha Nagar", "201301","india","Uttar Pradesh");
-		
+		customer = new Customer("RajKumar", "Yadav", "9876543212", "", "rajkumar@gmail.com", "");
+		CustomerProduct customerProduct = new CustomerProduct("2025-11-02T18:30:00.000Z", "765132348607985",
+				"765132348607985", "765132348607985", "2025-11-02T18:30:00.000Z", 1, 1);
+		CustomerAddress customerAddress = new CustomerAddress("51", "Sai Apartment", "Noida Sector 71",
+				"near Noida sector 52 metro Station", "Gautam Buddha Nagar", "201301", "india", "Uttar Pradesh");
+
 		Problems problems = new Problems(1, "Battery Issue");
 		List<Problems> problemList = new ArrayList<Problems>();
 		problemList.add(problems);
-		 createJobPayload = new CreateJobPayload(0, 2, 1, 1, customer, customerAddress, customerProduct, problemList);
-		
-		int customerId = RestAssured.given()
-		.spec(SpecUtil.requestSpecificationWithAuth(Roles.FD))
-		.body(createJobPayload)
-		.when().post("/job/create")
-		.then()
-		.spec(SpecUtil.resposeSpec_OK())
-		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("response-Schema/CreateJobAPIResponseSchema.json"))
-	.body("message", Matchers.equalTo("Job created successfully. "))
-	.body("data.mst_service_location_id", Matchers.equalTo(1))
-	.body("data.id", Matchers.notNullValue())
-	.body("data.job_number", Matchers.startsWith("JOB_"))
-	.extract().body().jsonPath().getInt("data.tr_customer_id");
+		createJobPayload = new CreateJobPayload(0, 2, 1, 1, customer, customerAddress, customerProduct, problemList);
+
+		int customerId = RestAssured.given().spec(SpecUtil.requestSpecificationWithAuth(Roles.FD))
+				.body(createJobPayload).when().post("/job/create").then().spec(SpecUtil.resposeSpec_OK())
+				.body(JsonSchemaValidator
+						.matchesJsonSchemaInClasspath("response-Schema/CreateJobAPIResponseSchema.json"))
+				.body("message", Matchers.equalTo("Job created successfully. "))
+				.body("data.mst_service_location_id", Matchers.equalTo(1)).body("data.id", Matchers.notNullValue())
+				.body("data.job_number", Matchers.startsWith("JOB_")).extract().body().jsonPath()
+				.getInt("data.tr_customer_id");
 		System.out.println("---------------------------");
 		System.out.println(customerId);
 		CustomerDBModel customerDatafromDb = CustomerDao.getCustomerInfo(customerId);
