@@ -5,9 +5,11 @@ import java.util.List;
 
 import org.hamcrest.Matchers;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
+import com.api.services.JobService;
 import com.api.utils.SpecUtil;
 import com.database.dao.CustomerDao;
 import com.database.model.CustomerDBModel;
@@ -24,11 +26,14 @@ public class CreateJobAPIWithDBValidationTest {
 	private CreateJobPayload createJobPayload;
 	private Customer customer;
 
-	@Test
-	public void createJobAPITest() {
+	private JobService jobService;
+
+	@BeforeMethod(description = "Setting up the createJob instance")
+	public void setup() {
+		jobService = new JobService();
 		customer = new Customer("RajKumar", "Yadav", "9876543212", "", "rajkumar@gmail.com", "");
-		CustomerProduct customerProduct = new CustomerProduct("2025-11-02T18:30:00.000Z", "765132348607985",
-				"765132348607985", "765132348607985", "2025-11-02T18:30:00.000Z", 1, 1);
+		CustomerProduct customerProduct = new CustomerProduct("2025-11-02T18:30:00.000Z", "705132348607985",
+				"705132348607985", "705132348607985", "2025-11-02T18:30:00.000Z", 1, 1);
 		CustomerAddress customerAddress = new CustomerAddress("51", "Sai Apartment", "Noida Sector 71",
 				"near Noida sector 52 metro Station", "Gautam Buddha Nagar", "201301", "india", "Uttar Pradesh");
 
@@ -37,8 +42,12 @@ public class CreateJobAPIWithDBValidationTest {
 		problemList.add(problems);
 		createJobPayload = new CreateJobPayload(0, 2, 1, 1, customer, customerAddress, customerProduct, problemList);
 
-		int customerId = RestAssured.given().spec(SpecUtil.requestSpecificationWithAuth(Roles.FD))
-				.body(createJobPayload).when().post("/job/create").then().spec(SpecUtil.resposeSpec_OK())
+	}
+
+	@Test
+	public void createJobAPITest() {
+
+		int customerId = jobService.createJob(Roles.FD,createJobPayload).then().spec(SpecUtil.resposeSpec_OK())
 				.body(JsonSchemaValidator
 						.matchesJsonSchemaInClasspath("response-Schema/CreateJobAPIResponseSchema.json"))
 				.body("message", Matchers.equalTo("Job created successfully. "))
