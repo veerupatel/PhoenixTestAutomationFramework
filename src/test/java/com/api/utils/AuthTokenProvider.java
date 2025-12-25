@@ -1,5 +1,8 @@
 package com.api.utils;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 import com.api.constants.Roles;
 import com.request.models.UserCredentials;
 
@@ -7,11 +10,17 @@ import io.restassured.RestAssured;
 
 public class AuthTokenProvider {
 
+	private static Map<Roles, String> tokenCache = new ConcurrentHashMap<Roles, String>();
+
 	private AuthTokenProvider() {
 
 	}
 
 	public static String getToken(Roles roles) {
+
+		if (tokenCache.containsKey(roles)) {
+			return tokenCache.get(roles);
+		}
 		UserCredentials userCredentials = null;
 		if (roles == Roles.FD) {
 			userCredentials = new UserCredentials("iamfd", "password");
@@ -19,17 +28,15 @@ public class AuthTokenProvider {
 			userCredentials = new UserCredentials("iamsup", "password");
 		} else if (roles == Roles.QC) {
 			userCredentials = new UserCredentials("iamqc", "password");
-		}
-		else if (roles == Roles.ENG) {
+		} else if (roles == Roles.ENG) {
 			userCredentials = new UserCredentials("iameng", "password");
 		}
 
-		String token = RestAssured.given()
-				.spec(SpecUtil.requestSpec())
-				.body(userCredentials).when().post("login").then().log().ifValidationFails()
-				.statusCode(200).extract().jsonPath().getString("data.token");
+		String token = RestAssured.given().spec(SpecUtil.requestSpec()).body(userCredentials).when().post("login")
+				.then().log().ifValidationFails().statusCode(200).extract().jsonPath().getString("data.token");
 		System.out.println(token);
 
+		tokenCache.put(roles, token);
 		return token;
 	}
 
