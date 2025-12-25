@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-19T13:02:27 IST" name="Default suite" finished-at="2025-12-19T13:02:41 IST" duration-ms="13845">
+  <suite started-at="2025-12-25T13:24:02 IST" name="Default suite" finished-at="2025-12-25T13:24:07 IST" duration-ms="4583">
     <groups>
     </groups>
-    <test started-at="2025-12-19T13:02:27 IST" name="Default test" finished-at="2025-12-19T13:02:41 IST" duration-ms="13845">
-      <class name="com.api.tests.CreateJobAPIWithDBValidationTest">
-        <test-method signature="createJobAPITest()[pri:0, instance:com.api.tests.CreateJobAPIWithDBValidationTest@3b0fe47a]" started-at="2025-12-19T13:02:27 IST" name="createJobAPITest" finished-at="2025-12-19T13:02:41 IST" duration-ms="13756" status="PASS">
+    <test started-at="2025-12-25T13:24:02 IST" name="Default test" finished-at="2025-12-25T13:24:07 IST" duration-ms="4583">
+      <class name="com.api.tests.LoginAPITest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.LoginAPITest@74d1dc36]" started-at="2025-12-25T13:24:02 IST" name="setup" description="Create the payload for the Login API" finished-at="2025-12-25T13:24:02 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createJobAPITest -->
-      </class> <!-- com.api.tests.CreateJobAPIWithDBValidationTest -->
+        </test-method> <!-- setup -->
+        <test-method signature="loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@74d1dc36]" started-at="2025-12-25T13:24:02 IST" name="loginAPITest" description="Verifying if login api is working for FD user" finished-at="2025-12-25T13:24:07 IST" duration-ms="4462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+      </class> <!-- com.api.tests.LoginAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
