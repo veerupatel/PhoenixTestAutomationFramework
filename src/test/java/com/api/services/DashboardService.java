@@ -10,6 +10,7 @@ import static io.restassured.RestAssured.given;
 public class DashboardService {
 	
 	private static final String COUNT_ENDPOINT = "/dashboard/count";
+	private static final String DETAIL_ENDPOINT = "/dashboard/details";
 	
 	public Response count(Roles role) {
 		 Response response = given()
@@ -24,5 +25,10 @@ public class DashboardService {
 					.when()
 			.get(COUNT_ENDPOINT);
 		return response;
+	}
+	public Response details(Roles role, Object payload) {
+	return	given().spec(SpecUtil.requestSpecificationWithAuth(role))
+		.body(payload).when().post(DETAIL_ENDPOINT);
+		
 	}
 }
