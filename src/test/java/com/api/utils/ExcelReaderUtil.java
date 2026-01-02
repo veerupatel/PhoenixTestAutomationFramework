@@ -5,6 +5,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -14,12 +16,15 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import com.request.models.UserCredentials;
 
 public class ExcelReaderUtil {
+	
+	
 
 	private ExcelReaderUtil() {
 
 	}
 
 	public static Iterator<UserCredentials> loadTestData() {
+		
 		InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream("testData/PhoenixTestData.xlsx");
 		XSSFWorkbook myworkBook;
 		XSSFSheet mySheet = null;

@@ -3,6 +3,9 @@ package com.database;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.api.utils.ConfigManager2;
 import com.api.utils.EnvUtil;
 import com.zaxxer.hikari.HikariConfig;
@@ -11,6 +14,8 @@ import com.zaxxer.hikari.HikariDataSource;
 import io.github.cdimascio.dotenv.Dotenv;
 
 public class DatabaseManager {
+	
+	private static final Logger logger = LogManager.getLogger(DatabaseManager.class);
 
 	private static final String DB_URL = EnvUtil.getValue("DB_URL");
 	private static final String DB_USER_NAME = EnvUtil.getValue("DB_USER_NAME");
@@ -25,6 +30,8 @@ public class DatabaseManager {
 	private static final String HIKARI_CP_POOL_NAME = ConfigManager2.getProperty("HIKARI_CP_POOL_NAME");
 	private static HikariConfig hikariConfig;
 	private static volatile HikariDataSource hikariDataSource;
+	
+	
 
 	private DatabaseManager() {
 
@@ -57,6 +64,7 @@ public class DatabaseManager {
 		if (hikariDataSource == null) {
 			instantiatePool();
 		} else if (hikariDataSource.isClosed()) {
+			logger.warn("HIKARI DATA SOURCE IS CLOSED");
 			throw new SQLException("HIKARI DATA SOURCE IS CLOSED");
 		}
 
