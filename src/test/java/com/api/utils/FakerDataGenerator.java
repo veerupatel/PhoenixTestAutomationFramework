@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.github.javafaker.Faker;
 import com.request.models.CreateJobPayload;
 import com.request.models.Customer;
@@ -27,11 +30,25 @@ public class FakerDataGenerator {
 	private final static int VALI_DPROBLEMS_ID[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17, 19, 20, 22, 24,
 			26, 27, 28, 29 };
 
+	private static final Logger logger = LogManager.getFormatterLogger(FakerDataGenerator.class);
+
 	private FakerDataGenerator() {
 
 	}
 
+	public static CreateJobPayload generateFakeCreateJobData() {
+		logger.info("Generating the fake payload for Create job");
+		Customer customer = generateFakeCustomerData();
+		CustomerAddress customerAddress = generateFakeCustomerAddressData();
+		CustomerProduct customerProduct = generateFakerCustomerProductData();
+		List<Problems> problems = generateFakeProblemsList();
+		CreateJobPayload payload = new CreateJobPayload(MST_SERVICE_LOCATION_ID, MST_PLATFORM_ID,
+				MST_WARRANTY_STATUS_ID, MST_OEM_ID, customer, customerAddress, customerProduct, problems);
+		return payload;
+	}
+
 	public static Iterator<CreateJobPayload> generateFakeCreateJobData(int count) {
+		logger.info("Generating the fake {} payload for Create job",count);
 		List<CreateJobPayload> payloadList = new ArrayList<CreateJobPayload>();
 		for (int i = 1; i <= count; i++) {
 
@@ -87,12 +104,12 @@ public class FakerDataGenerator {
 		String fakeRemark;
 		Problems problems;
 		List<Problems> problemList = new ArrayList<Problems>();
-		for(int i=1;i<=count;i++) {
-		intRandomIndex = RANDOM.nextInt(VALI_DPROBLEMS_ID.length);
-		fakeRemark = faker.lorem().sentence(5);
-		problems = new Problems(VALI_DPROBLEMS_ID[intRandomIndex], fakeRemark);
+		for (int i = 1; i <= count; i++) {
+			intRandomIndex = RANDOM.nextInt(VALI_DPROBLEMS_ID.length);
+			fakeRemark = faker.lorem().sentence(5);
+			problems = new Problems(VALI_DPROBLEMS_ID[intRandomIndex], fakeRemark);
 
-		problemList.add(problems);
+			problemList.add(problems);
 		}
 		return problemList;
 	}

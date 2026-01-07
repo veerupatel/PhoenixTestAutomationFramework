@@ -15,8 +15,9 @@ public class ConfigManager {
 	}
 
 	static {
-		File configFile = new File(
-				System.getProperty("user.dir") +File.separator +"src"+ File.separator +"test" +File.separator+"resources"+File.separator+"config"+File.separator+"config.properties");
+
+		File configFile = new File(System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
+				+ File.separator + "resources" + File.separator + "config" + File.separator + "config.properties");
 
 		FileReader reader = null;
 		try {
