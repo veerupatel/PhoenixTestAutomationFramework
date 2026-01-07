@@ -1,59 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-02T17:14:03 IST" name="Phoenix API Test Suite" finished-at="2026-01-02T17:14:15 IST" duration-ms="11753">
+  <suite started-at="2026-01-02T18:08:20 IST" name="Default suite" finished-at="2026-01-02T18:08:26 IST" duration-ms="6283">
     <groups>
+      <group name="regression">
+        <method signature="LoginAPITest.loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@5149d738]" name="loginAPITest" class="com.api.tests.LoginAPITest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginAPITest.loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@5149d738]" name="loginAPITest" class="com.api.tests.LoginAPITest"/>
+      </group> <!-- smoke -->
+      <group name="api">
+        <method signature="LoginAPITest.loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@5149d738]" name="loginAPITest" class="com.api.tests.LoginAPITest"/>
+      </group> <!-- api -->
     </groups>
-    <test started-at="2026-01-02T17:14:03 IST" name="Inwarranty Flow" finished-at="2026-01-02T17:14:15 IST" duration-ms="11753">
-      <class name="com.api.tests.MasterAPITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.MasterAPITest@4d1c005e]" started-at="2026-01-02T17:14:14 IST" name="setup" description="setting up the master instance" finished-at="2026-01-02T17:14:14 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyMasterAPITest()[pri:0, instance:com.api.tests.MasterAPITest@4d1c005e]" started-at="2026-01-02T17:14:14 IST" name="verifyMasterAPITest" description="Verifying if master api is giving correct resonse" finished-at="2026-01-02T17:14:15 IST" duration-ms="888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMasterAPITest -->
-      </class> <!-- com.api.tests.MasterAPITest -->
-      <class name="com.api.tests.CountAPITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.CountAPITest@3e08ff24]" started-at="2026-01-02T17:14:13 IST" name="setup" description="setting up the count api instance" finished-at="2026-01-02T17:14:13 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="countAPITest_MissingAuthToken()[pri:0, instance:com.api.tests.CountAPITest@3e08ff24]" started-at="2026-01-02T17:14:13 IST" name="countAPITest_MissingAuthToken" finished-at="2026-01-02T17:14:14 IST" duration-ms="448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- countAPITest_MissingAuthToken -->
-        <test-method signature="verifyCountAPITest()[pri:0, instance:com.api.tests.CountAPITest@3e08ff24]" started-at="2026-01-02T17:14:14 IST" name="verifyCountAPITest" finished-at="2026-01-02T17:14:14 IST" duration-ms="582" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCountAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.CountAPITest@3e08ff24]" started-at="2026-01-02T17:14:14 IST" name="setup" description="setting up the count api instance" finished-at="2026-01-02T17:14:14 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-      </class> <!-- com.api.tests.CountAPITest -->
-      <class name="com.api.tests.UserDetailsAPITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.UserDetailsAPITest@2b40ff9c]" started-at="2026-01-02T17:14:12 IST" name="setup" description="Setting up the UserService instance" finished-at="2026-01-02T17:14:12 IST" duration-ms="33" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="UserDetailsAPITest()[pri:0, instance:com.api.tests.UserDetailsAPITest@2b40ff9c]" started-at="2026-01-02T17:14:12 IST" name="UserDetailsAPITest" finished-at="2026-01-02T17:14:13 IST" duration-ms="1118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserDetailsAPITest -->
-      </class> <!-- com.api.tests.UserDetailsAPITest -->
+    <test started-at="2026-01-02T18:08:20 IST" name="Default test" finished-at="2026-01-02T18:08:26 IST" duration-ms="6283">
       <class name="com.api.tests.LoginAPITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.LoginAPITest@4be29ed9]" started-at="2026-01-02T17:14:03 IST" name="setup" description="Create the payload for the Login API" finished-at="2026-01-02T17:14:05 IST" duration-ms="1562" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.LoginAPITest@5149d738]" started-at="2026-01-02T18:08:20 IST" name="setup" description="Create the payload for the Login API" finished-at="2026-01-02T18:08:20 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@4be29ed9]" started-at="2026-01-02T17:14:05 IST" name="loginAPITest" description="Verifying if login api is working for FD user" finished-at="2026-01-02T17:14:12 IST" duration-ms="6896" status="PASS">
+        <test-method signature="loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@5149d738]" started-at="2026-01-02T18:08:20 IST" name="loginAPITest" description="Verifying if login api is working for FD user" finished-at="2026-01-02T18:08:26 IST" duration-ms="6164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAPITest -->
       </class> <!-- com.api.tests.LoginAPITest -->
-    </test> <!-- Inwarranty Flow -->
-  </suite> <!-- Phoenix API Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
