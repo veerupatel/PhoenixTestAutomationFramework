@@ -3,6 +3,7 @@ package com.api.utils;
 import org.hamcrest.Matchers;
 
 import com.api.constants.Roles;
+import com.api.filters.SensitiveDataFilter;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -23,9 +24,14 @@ public class SpecUtil {
 
 	// POST-PUT-PATCH {Body}
 	public static RequestSpecification requestSpec(Object payload) {
-		RequestSpecification request = new RequestSpecBuilder().setBaseUri(ConfigManager2.getProperty("BASE_URL"))
-				.setContentType(ContentType.JSON).setAccept(ContentType.JSON).setBody(payload).log(LogDetail.URI)
-				.log(LogDetail.METHOD).log(LogDetail.HEADERS).log(LogDetail.BODY).build();
+		RequestSpecification request = new RequestSpecBuilder()
+				.setBaseUri(ConfigManager2.getProperty("BASE_URL"))
+				.setContentType(ContentType.JSON)
+				.setAccept(ContentType.JSON)
+				.setBody(payload)
+				.addFilter(new SensitiveDataFilter())
+				
+				.build();
 		return request;
 	}
 
