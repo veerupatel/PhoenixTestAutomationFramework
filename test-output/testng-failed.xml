@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Phoenix API Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Inwarranty Flow - Data Driven Tests(failed)">
     <classes>
-      <class name="com.api.tests.LoginAPITest">
+      <class name="com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest">
         <methods>
           <include name="setup"/>
-          <include name="loginAPITest"/>
+          <include name="createJobAPITest" invocation-numbers="0 2"/>
         </methods>
-      </class> <!-- com.api.tests.LoginAPITest -->
+      </class> <!-- com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest -->
+      <class name="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest">
+        <methods>
+          <include name="loginAPITest" invocation-numbers="0 1 2 3"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.api.tests.datadriven.LoginAPIJsonDataDrivenTest -->
+      <class name="com.api.tests.datadriven.LoginAPIDataDrivenTest">
+        <methods>
+          <include name="loginAPITest" invocation-numbers="0 1 2 3"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.api.tests.datadriven.LoginAPIDataDrivenTest -->
+      <class name="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest">
+        <methods>
+          <include name="setup"/>
+          <include name="loginAPITest" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest -->
+      <class name="com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest">
+        <methods>
+          <include name="setup"/>
+          <include name="createJobAPITest" invocation-numbers="0 1 2 3 4 5"/>
+        </methods>
+      </class> <!-- com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Inwarranty Flow - Data Driven Tests(failed) -->
+</suite> <!-- Failed suite [Phoenix API Test Suite] -->

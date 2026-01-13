@@ -3,6 +3,7 @@ package com.api.tests.datadriven;
 import org.hamcrest.Matchers;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
@@ -17,6 +18,7 @@ import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.ValidatableResponse;
 
+@Listeners(com.listeners.APITestListener.class)
 public class CreateJobAPIFakeDataDrivenTest {
 	
 	private JobService jobService;
