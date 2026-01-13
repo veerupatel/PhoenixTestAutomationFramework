@@ -1,6 +1,7 @@
 package com.api.tests;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
@@ -15,6 +16,7 @@ import io.restassured.http.Header;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
+@Listeners(com.listeners.APITestListener.class)
 public class UserDetailsAPITest {
 
 	private UserService userService;

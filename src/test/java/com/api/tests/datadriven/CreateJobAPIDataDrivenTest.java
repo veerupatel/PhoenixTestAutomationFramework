@@ -2,6 +2,7 @@ package com.api.tests.datadriven;
 
 import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
@@ -11,6 +12,7 @@ import com.request.models.CreateJobPayload;
 
 import io.restassured.module.jsv.JsonSchemaValidator;
 
+@Listeners(com.listeners.APITestListener.class)
 public class CreateJobAPIDataDrivenTest {
 	
 	private JobService jobService;

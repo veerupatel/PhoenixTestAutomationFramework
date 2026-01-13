@@ -1,18 +1,15 @@
 package com.api.tests;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
 import com.api.services.MasterService;
-import com.api.utils.AuthTokenProvider;
-import com.api.utils.ConfigManager2;
 import com.api.utils.SpecUtil;
 
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
-
+@Listeners(com.listeners.APITestListener.class)
 public class MasterAPITest {
 
 	private MasterService masterService;

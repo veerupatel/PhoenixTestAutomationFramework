@@ -2,13 +2,14 @@ package com.api.tests;
 
 import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
 import com.api.services.JobService;
 import com.api.utils.SpecUtil;
 import com.request.models.Search;
-
+@Listeners(com.listeners.APITestListener.class)
 public class SearchAPITest {
 
 	private JobService jobService;
