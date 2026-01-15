@@ -7,7 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.api.constants.Roles;
-import com.request.models.UserCredentials;
+import com.api.request.models.UserCredentials;
 
 import io.restassured.RestAssured;
 

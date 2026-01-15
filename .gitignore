@@ -3,7 +3,8 @@ surefire-reports/
 failsafe-reports/
 allure-results/
 allure-report/
-logs/
+/logs/
 *.log
 *.env
 /target/
+.allure/

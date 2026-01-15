@@ -13,7 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import com.request.models.UserCredentials;
+import com.api.request.models.UserCredentials;
 
 public class ExcelReaderUtil {
 	

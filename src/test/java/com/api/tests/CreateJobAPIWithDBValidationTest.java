@@ -10,15 +10,15 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
+import com.api.request.models.CreateJobPayload;
+import com.api.request.models.Customer;
+import com.api.request.models.CustomerAddress;
+import com.api.request.models.CustomerProduct;
+import com.api.request.models.Problems;
 import com.api.services.JobService;
 import com.api.utils.SpecUtil;
 import com.database.dao.CustomerDao;
 import com.database.model.CustomerDBModel;
-import com.request.models.CreateJobPayload;
-import com.request.models.Customer;
-import com.request.models.CustomerAddress;
-import com.request.models.CustomerProduct;
-import com.request.models.Problems;
 
 import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;

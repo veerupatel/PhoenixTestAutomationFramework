@@ -6,14 +6,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.services.AuthService;
-import com.api.utils.ConfigManager;
-import com.api.utils.ConfigManager2;
 import com.api.utils.SpecUtil;
 import com.dataproviders.api.bean.UserBean;
-import com.request.models.UserCredentials;
 
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
 @Listeners(com.listeners.APITestListener.class)

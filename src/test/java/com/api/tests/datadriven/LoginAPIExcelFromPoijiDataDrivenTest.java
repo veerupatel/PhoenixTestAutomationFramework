@@ -9,7 +9,6 @@ import com.api.services.AuthService;
 import com.api.utils.SpecUtil;
 import com.dataproviders.api.bean.UserBean;
 
-import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
 @Listeners(com.listeners.APITestListener.class)
 public class LoginAPIExcelFromPoijiDataDrivenTest {

@@ -1,4 +1,4 @@
-package com.request.models;
+package com.api.request.models;
 
 public record Customer (	
 	 String first_name,

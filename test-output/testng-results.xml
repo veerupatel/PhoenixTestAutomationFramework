@@ -1,75 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="36" passed="16" failed="20" skipped="0">
+<testng-results ignored="0" total="36" passed="9" failed="27" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-13T13:08:47 IST" name="Phoenix API Test Suite" finished-at="2026-01-13T13:09:17 IST" duration-ms="30652">
+  <suite started-at="2026-01-15T11:13:40 IST" name="Phoenix API Test Suite" finished-at="2026-01-15T11:13:59 IST" duration-ms="19266">
     <groups>
       <group name="datadriven">
-        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
-        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
-        <method signature="LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest"/>
-        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
+        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
+        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
+        <method signature="LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest"/>
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.api.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
       </group> <!-- datadriven -->
       <group name="regression">
-        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
-        <method signature="LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest"/>
-        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
+        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
+        <method signature="LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest"/>
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.api.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
       </group> <!-- regression -->
       <group name="faker">
-        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
+        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
       </group> <!-- faker -->
       <group name="integration">
-        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
+        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
       </group> <!-- integration -->
       <group name="smoke">
-        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
-        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
-        <method signature="LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest"/>
-        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
+        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" name="createJobAPITest" class="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest"/>
+        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
+        <method signature="LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest"/>
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.api.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
       </group> <!-- smoke -->
       <group name="api">
-        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
-        <method signature="LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest"/>
-        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
+        <method signature="LoginAPIDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIDataDrivenTest"/>
+        <method signature="LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest"/>
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPITest(com.api.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" name="loginAPITest" class="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest"/>
       </group> <!-- api -->
     </groups>
-    <test started-at="2026-01-13T13:08:47 IST" name="Inwarranty Flow - Data Driven Tests" finished-at="2026-01-13T13:09:17 IST" duration-ms="30652">
+    <test started-at="2026-01-15T11:13:40 IST" name="Inwarranty Flow - Data Driven Tests" finished-at="2026-01-15T11:13:59 IST" duration-ms="19266">
       <class name="com.api.tests.datadriven.CreateJobAPIDataDrivenTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:08:48 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:41 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:02 IST" duration-ms="14188" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356910, imei1=876545654356910, imei2=876545654356910, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:08:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:41 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:01 IST" duration-ms="13519" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356909, imei1=876545654356909, imei2=876545654356909, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:08:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:41 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:01 IST" duration-ms="13337" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:49 IST" duration-ms="8217" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -77,14 +55,163 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIDataDrivenTest.createJobAPITest(CreateJobAPIDataDrivenTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:08:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:41 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:02 IST" duration-ms="13821" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:49 IST" duration-ms="7960" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356909, imei1=876545654356909, imei2=876545654356909, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIDataDrivenTest.createJobAPITest(CreateJobAPIDataDrivenTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:50 IST" duration-ms="8568" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356910, imei1=876545654356910, imei2=876545654356910, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIDataDrivenTest.createJobAPITest(CreateJobAPIDataDrivenTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:49 IST" duration-ms="7958" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -92,14 +219,50 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIDataDrivenTest.createJobAPITest(CreateJobAPIDataDrivenTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:08:48 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:01 IST" duration-ms="12751" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:49 IST" duration-ms="7957" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -107,10 +270,50 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIDataDrivenTest.createJobAPITest(CreateJobAPIDataDrivenTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:02 IST" duration-ms="13388" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@5f08fe00]" started-at="2026-01-15T11:13:41 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:50 IST" duration-ms="8669" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -118,220 +321,66 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIDataDrivenTest.createJobAPITest(CreateJobAPIDataDrivenTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDataDrivenTest@247310d0]" started-at="2026-01-13T13:08:48 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:08:48 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
       </class> <!-- com.api.tests.datadriven.CreateJobAPIDataDrivenTest -->
-      <class name="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" started-at="2026-01-13T13:09:08 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:09:08 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" started-at="2026-01-13T13:09:08 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2026-01-13T13:09:08 IST" duration-ms="5" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UserCredentials[username=iamfd, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class com.request.models.UserCredentials cannot be cast to class com.api.request.model.UserCredentials (com.request.models.UserCredentials and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.request.models.UserCredentials cannot be cast to class com.api.request.model.UserCredentials (com.request.models.UserCredentials and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIJsonDataDrivenTest.loginAPITest(LoginAPIJsonDataDrivenTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAPITest -->
-        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" started-at="2026-01-13T13:09:08 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2026-01-13T13:09:08 IST" duration-ms="3" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UserCredentials[username=iamsup, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class com.request.models.UserCredentials cannot be cast to class com.api.request.model.UserCredentials (com.request.models.UserCredentials and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.request.models.UserCredentials cannot be cast to class com.api.request.model.UserCredentials (com.request.models.UserCredentials and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIJsonDataDrivenTest.loginAPITest(LoginAPIJsonDataDrivenTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" started-at="2026-01-13T13:09:08 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:09:08 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" started-at="2026-01-13T13:09:08 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:09:08 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" started-at="2026-01-13T13:09:08 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2026-01-13T13:09:08 IST" duration-ms="4" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UserCredentials[username=iameng, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class com.request.models.UserCredentials cannot be cast to class com.api.request.model.UserCredentials (com.request.models.UserCredentials and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.request.models.UserCredentials cannot be cast to class com.api.request.model.UserCredentials (com.request.models.UserCredentials and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIJsonDataDrivenTest.loginAPITest(LoginAPIJsonDataDrivenTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" started-at="2026-01-13T13:09:08 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:09:08 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginAPITest(com.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@303cf2ba]" started-at="2026-01-13T13:09:08 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2026-01-13T13:09:08 IST" duration-ms="6" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UserCredentials[username=iamqc, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class com.request.models.UserCredentials cannot be cast to class com.api.request.model.UserCredentials (com.request.models.UserCredentials and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.request.models.UserCredentials cannot be cast to class com.api.request.model.UserCredentials (com.request.models.UserCredentials and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIJsonDataDrivenTest.loginAPITest(LoginAPIJsonDataDrivenTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAPITest -->
-      </class> <!-- com.api.tests.datadriven.LoginAPIJsonDataDrivenTest -->
       <class name="com.api.tests.datadriven.LoginAPIDataDrivenTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" started-at="2026-01-13T13:08:47 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:08:47 IST" duration-ms="53" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" started-at="2026-01-15T11:13:41 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:41 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" started-at="2026-01-13T13:08:47 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:08:47 IST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" started-at="2026-01-15T11:13:41 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:41 IST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" started-at="2026-01-13T13:08:47 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:08:47 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" started-at="2026-01-15T11:13:41 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:41 IST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" started-at="2026-01-13T13:08:47 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:08:47 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" started-at="2026-01-15T11:13:41 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:41 IST" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" started-at="2026-01-13T13:08:47 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2026-01-13T13:08:47 IST" duration-ms="203" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UserBean [username=iameng, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIDataDrivenTest.loginAPITest(LoginAPIDataDrivenTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAPITest -->
-        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" started-at="2026-01-13T13:08:47 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2026-01-13T13:08:47 IST" duration-ms="171" status="FAIL">
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" started-at="2026-01-15T11:13:41 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2026-01-15T11:13:41 IST" duration-ms="105" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -339,14 +388,17 @@ at java.base/java.lang.Thread.run(Thread.java:840)
               </value>
             </param>
           </params>
-          <exception class="java.lang.ClassCastException">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
+              <![CDATA[Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIDataDrivenTest.loginAPITest(LoginAPIDataDrivenTest.java:33)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+
+at com.api.tests.datadriven.LoginAPIDataDrivenTest.loginAPITest(LoginAPIDataDrivenTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -361,45 +413,11 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAPITest -->
-        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" started-at="2026-01-13T13:08:47 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2026-01-13T13:08:47 IST" duration-ms="181" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UserBean [username=iamqc, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIDataDrivenTest.loginAPITest(LoginAPIDataDrivenTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAPITest -->
-        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@17f9d882]" started-at="2026-01-13T13:08:47 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2026-01-13T13:08:48 IST" duration-ms="290" status="FAIL">
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" started-at="2026-01-15T11:13:41 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2026-01-15T11:13:41 IST" duration-ms="82" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -407,14 +425,17 @@ at java.base/java.lang.Thread.run(Thread.java:840)
               </value>
             </param>
           </params>
-          <exception class="java.lang.ClassCastException">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
+              <![CDATA[Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIDataDrivenTest.loginAPITest(LoginAPIDataDrivenTest.java:33)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+
+at com.api.tests.datadriven.LoginAPIDataDrivenTest.loginAPITest(LoginAPIDataDrivenTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -429,94 +450,242 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" started-at="2026-01-15T11:13:41 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2026-01-15T11:13:41 IST" duration-ms="78" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserBean [username=iameng, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+
+at com.api.tests.datadriven.LoginAPIDataDrivenTest.loginAPITest(LoginAPIDataDrivenTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIDataDrivenTest@79627d27]" started-at="2026-01-15T11:13:41 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIDataProvider" finished-at="2026-01-15T11:13:41 IST" duration-ms="69" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserBean [username=iamqc, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+
+at com.api.tests.datadriven.LoginAPIDataDrivenTest.loginAPITest(LoginAPIDataDrivenTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAPITest -->
       </class> <!-- com.api.tests.datadriven.LoginAPIDataDrivenTest -->
+      <class name="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" started-at="2026-01-15T11:13:54 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:54 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" started-at="2026-01-15T11:13:54 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" started-at="2026-01-15T11:13:54 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" started-at="2026-01-15T11:13:54 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginAPITest(com.api.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" started-at="2026-01-15T11:13:54 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2026-01-15T11:13:54 IST" duration-ms="261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials[username=iamsup, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.api.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" started-at="2026-01-15T11:13:54 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2026-01-15T11:13:54 IST" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials[username=iamfd, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.api.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" started-at="2026-01-15T11:13:54 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2026-01-15T11:13:54 IST" duration-ms="226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials[username=iameng, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+        <test-method signature="loginAPITest(com.api.request.models.UserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginAPIJsonDataDrivenTest@7c5df615]" started-at="2026-01-15T11:13:54 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIJsonDataProvider" finished-at="2026-01-15T11:13:54 IST" duration-ms="217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserCredentials[username=iamqc, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+      </class> <!-- com.api.tests.datadriven.LoginAPIJsonDataDrivenTest -->
       <class name="com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" started-at="2026-01-13T13:09:03 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" started-at="2026-01-15T11:13:50 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:50 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" started-at="2026-01-13T13:09:03 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2026-01-13T13:09:07 IST" duration-ms="3970" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" started-at="2026-01-15T11:13:50 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" started-at="2026-01-15T11:13:50 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" started-at="2026-01-15T11:13:50 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" started-at="2026-01-15T11:13:50 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" started-at="2026-01-15T11:13:50 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2026-01-15T11:13:52 IST" duration-ms="1303" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Jagadisha, last_name=Patel, mobile_number=701674914, mobile_number_alt=708479022, email_id=rukhmani.chaturvedi@hotmail.com, email_id_alt=lai.singh@hotmail.com], customer_address=CustomerAddress[flat_number=329, apartment_name=Devangana Island, street_name=Dharitri Stravenue, landmark=Tagore Trafficway, area=Naik Alley, pincode=15815, country=Tripura, state=India], customer_product=CustomerProduct[dop=2026-01-03T07:39:03.232394700Z, serial_number=778808256971438, imei1=778808256971438, imei2=778808256971438, popurl=www.sweta-deshpande.name, product_id=1, mst_model_id=1], problems=[Problems[id=9, remark=Possimus iure perferendis quidem et fugit eum.], Problems[id=12, remark=Neque eum et id explicabo incidunt reprehenderit quasi similique.]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Meenakshi, last_name=Adiga, mobile_number=703987779, mobile_number_alt=704422501, email_id=susheel.sharma@gmail.com, email_id_alt=deeksha.guneta@yahoo.co.in], customer_address=CustomerAddress[flat_number=725, apartment_name=Achari Ville, street_name=Johar Harbors, landmark=Chakrika Glen, area=Mukhopadhyay Freeway, pincode=30634, country=West Bengal, state=India], customer_product=CustomerProduct[dop=2026-01-05T05:43:50.966258800Z, serial_number=192191987610517, imei1=192191987610517, imei2=192191987610517, popurl=www.indra-bhat.in, product_id=1, mst_model_id=1], problems=[Problems[id=11, remark=Est provident consequatur veritatis et.]]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" started-at="2026-01-13T13:09:03 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:03 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" started-at="2026-01-13T13:09:03 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2026-01-13T13:09:04 IST" duration-ms="1206" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" started-at="2026-01-15T11:13:51 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2026-01-15T11:13:53 IST" duration-ms="2318" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Chandan, last_name=Tandon, mobile_number=702110672, mobile_number_alt=701784567, email_id=agneya.johar@hotmail.com, email_id_alt=triloki.varman@yahoo.co.in], customer_address=CustomerAddress[flat_number=624, apartment_name=Gupta Valley, street_name=Somayaji Rapids, landmark=Krishnadasa Tunnel, area=Ambar Inlet, pincode=83982, country=Pondicherry, state=India], customer_product=CustomerProduct[dop=2026-01-03T07:39:03.278272Z, serial_number=773900387148193, imei1=773900387148193, imei2=773900387148193, popurl=www.darshwana-khatri.biz, product_id=1, mst_model_id=1], problems=[Problems[id=20, remark=Officiis vitae est vitae dignissimos perspiciatis et.], Problems[id=7, remark=Itaque amet magnam amet quis adipisci a sit.], Problems[id=26, remark=Est aspernatur eos commodi odit consequatur delectus.]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Charuvrat, last_name=Gandhi, mobile_number=707097243, mobile_number_alt=700501131, email_id=bhaanumati.saini@gmail.com, email_id_alt=jai.prajapat@yahoo.co.in], customer_address=CustomerAddress[flat_number=658, apartment_name=Deshpande Oval, street_name=Deeptimayee Shore, landmark=Giriraaj Garden, area=Esha Neck, pincode=58978, country=Karnataka, state=India], customer_product=CustomerProduct[dop=2026-01-05T05:43:50.950300200Z, serial_number=544644059488809, imei1=544644059488809, imei2=544644059488809, popurl=www.vrund-bhattathiri.biz, product_id=1, mst_model_id=1], problems=[Problems[id=12, remark=Consequatur odit numquam laudantium ut sapiente sit.], Problems[id=3, remark=Est enim ad quasi autem ut minima expedita iusto.]]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" started-at="2026-01-13T13:09:03 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2026-01-13T13:09:04 IST" duration-ms="1011" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" started-at="2026-01-15T11:13:51 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2026-01-15T11:13:53 IST" duration-ms="2302" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Diksha, last_name=Jain, mobile_number=709277708, mobile_number_alt=708998821, email_id=agrata.singh@hotmail.com, email_id_alt=suma.ganaka@yahoo.co.in], customer_address=CustomerAddress[flat_number=662, apartment_name=Abbott Manor, street_name=Lai Views, landmark=Devajyoti Glens, area=Gajabahu Orchard, pincode=72330, country=West Bengal, state=India], customer_product=CustomerProduct[dop=2026-01-03T07:39:03.295233500Z, serial_number=425588832669451, imei1=425588832669451, imei2=425588832669451, popurl=www.deeksha-butt.biz, product_id=1, mst_model_id=1], problems=[Problems[id=28, remark=Architecto nesciunt fuga quod corrupti quo sed autem.], Problems[id=3, remark=Aut nam aut in odit temporibus perspiciatis et in.], Problems[id=20, remark=Ea molestiae est voluptatem ipsum quos fuga.]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Chaturaanan, last_name=Dubashi, mobile_number=709433161, mobile_number_alt=707014369, email_id=girish.khatri@yahoo.co.in, email_id_alt=vaishvi.iyer@gmail.com], customer_address=CustomerAddress[flat_number=721, apartment_name=Mehrotra Drive, street_name=Krishnadas Underpass, landmark=Bharadwaj Station, area=Oormila Bypass, pincode=73346, country=Tamil Nadu, state=India], customer_product=CustomerProduct[dop=2026-01-05T05:43:50.968254500Z, serial_number=466923765099862, imei1=466923765099862, imei2=466923765099862, popurl=www.bilva-tandon.name, product_id=1, mst_model_id=1], problems=[Problems[id=10, remark=Quasi eos repudiandae aut dolor voluptas nihil.]]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" started-at="2026-01-13T13:09:03 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:03 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" started-at="2026-01-13T13:09:03 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" started-at="2026-01-13T13:09:03 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2026-01-13T13:09:07 IST" duration-ms="3374" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" started-at="2026-01-15T11:13:51 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2026-01-15T11:13:54 IST" duration-ms="3306" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Akshaj, last_name=Iyer, mobile_number=701427367, mobile_number_alt=701213191, email_id=shubhaprada.mahajan@yahoo.co.in, email_id_alt=chaten.joshi@hotmail.com], customer_address=CustomerAddress[flat_number=653, apartment_name=Hamsini Orchard, street_name=Nalini Trafficway, landmark=Chidananda Causeway, area=Aadinath Ranch, pincode=15802, country=Punjab, state=India], customer_product=CustomerProduct[dop=2026-01-03T07:39:03.312183100Z, serial_number=464295540592311, imei1=464295540592311, imei2=464295540592311, popurl=www.girish-saini.biz, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=Consequatur rerum maxime et numquam.]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Devesh, last_name=Nambeesan, mobile_number=705271495, mobile_number_alt=706533020, email_id=satish.kakkar@hotmail.com, email_id_alt=hiranya.asan@hotmail.com], customer_address=CustomerAddress[flat_number=424, apartment_name=Tanya Greens, street_name=Sunita Road, landmark=Darshan Causeway, area=Kaur View, pincode=06337, country=Daman and Diu, state=India], customer_product=CustomerProduct[dop=2026-01-05T05:43:50.971243900Z, serial_number=308340715729113, imei1=308340715729113, imei2=308340715729113, popurl=www.shankar-adiga.in, product_id=1, mst_model_id=1], problems=[Problems[id=29, remark=Sit tempora suscipit ea dicta sapiente quas.], Problems[id=9, remark=Vitae veniam id dolorem ex.]]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" started-at="2026-01-13T13:09:03 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2026-01-13T13:09:08 IST" duration-ms="4376" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@a1691c0]" started-at="2026-01-15T11:13:51 IST" name="createJobAPITest" data-provider="CreateJobAPIFakeDataProvider" finished-at="2026-01-15T11:13:53 IST" duration-ms="2244" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Mohinder, last_name=Malik, mobile_number=708550867, mobile_number_alt=700451641, email_id=dhatri.shukla@gmail.com, email_id_alt=dhatri.somayaji@hotmail.com], customer_address=CustomerAddress[flat_number=176, apartment_name=Bhushan Well, street_name=Trivedi Rest, landmark=Sinha Islands, area=Butt Pass, pincode=89290, country=Sikkim, state=India], customer_product=CustomerProduct[dop=2026-01-03T07:39:03.316171Z, serial_number=852719842424694, imei1=852719842424694, imei2=852719842424694, popurl=www.daksha-shah.biz, product_id=1, mst_model_id=1], problems=[Problems[id=16, remark=Commodi quasi repudiandae delectus quasi non qui aliquam illum.]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Preity, last_name=Iyer, mobile_number=707730513, mobile_number_alt=705166264, email_id=dhruv.arora@gmail.com, email_id_alt=sucheta.tandon@gmail.com], customer_address=CustomerAddress[flat_number=838, apartment_name=Sharma Roads, street_name=Bilva Spur, landmark=Bhushan Forge, area=Dubashi Spurs, pincode=87873, country=Tamil Nadu, state=India], customer_product=CustomerProduct[dop=2026-01-05T05:43:50.973239Z, serial_number=769818424940556, imei1=769818424940556, imei2=769818424940556, popurl=www.dayaamay-dwivedi.in, product_id=1, mst_model_id=1], problems=[Problems[id=29, remark=Quia nisi delectus est rem dolorem numquam porro minima odio.], Problems[id=4, remark=Non molestiae cum est est voluptas.], Problems[id=7, remark=Et molestiae assumenda harum nobis aut nemo porro ratione at.]]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest@1033576a]" started-at="2026-01-13T13:09:03 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:03 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
       </class> <!-- com.api.tests.datadriven.CreateJobAPIFakeDataDrivenTest -->
       <class name="com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@76494737]" started-at="2026-01-13T13:09:08 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@2f995afc]" started-at="2026-01-15T11:13:54 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@76494737]" started-at="2026-01-13T13:09:08 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2026-01-13T13:09:10 IST" duration-ms="1626" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@2f995afc]" started-at="2026-01-15T11:13:54 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@2f995afc]" started-at="2026-01-15T11:13:54 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@2f995afc]" started-at="2026-01-15T11:13:54 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@2f995afc]" started-at="2026-01-15T11:13:54 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2026-01-15T11:13:55 IST" duration-ms="248" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -524,14 +693,48 @@ at java.base/java.lang.Thread.run(Thread.java:840)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest.createJobAPITest(CreateJobAPIJsonDataDrivenTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@76494737]" started-at="2026-01-13T13:09:08 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:08 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@76494737]" started-at="2026-01-13T13:09:08 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2026-01-13T13:09:11 IST" duration-ms="2500" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@2f995afc]" started-at="2026-01-15T11:13:54 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2026-01-15T11:13:55 IST" duration-ms="221" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -539,29 +742,48 @@ at java.base/java.lang.Thread.run(Thread.java:840)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest.createJobAPITest(CreateJobAPIJsonDataDrivenTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@76494737]" started-at="2026-01-13T13:09:08 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2026-01-13T13:09:10 IST" duration-ms="1506" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravinra, last_name=Yadav, mobile_number=8448752554, mobile_number_alt=, email_id=ravindra@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=sai, apartment_name=disck, street_name=gali no 3, landmark=noda, area=gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-30T18:30:00.000Z, serial_number=806565432411234, imei1=806565432411234, imei2=806565432411234, popurl=2025-11-30T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=ggggg]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@76494737]" started-at="2026-01-13T13:09:08 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:08 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@76494737]" started-at="2026-01-13T13:09:08 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:08 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@76494737]" started-at="2026-01-13T13:09:08 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2026-01-13T13:09:10 IST" duration-ms="1814" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@2f995afc]" started-at="2026-01-15T11:13:54 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2026-01-15T11:13:55 IST" duration-ms="187" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -569,16 +791,119 @@ at java.base/java.lang.Thread.run(Thread.java:840)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest.createJobAPITest(CreateJobAPIJsonDataDrivenTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest@2f995afc]" started-at="2026-01-15T11:13:54 IST" name="createJobAPITest" data-provider="CreateJobAPIJsonDataProvider" finished-at="2026-01-15T11:13:55 IST" duration-ms="213" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravinra, last_name=Yadav, mobile_number=8448752554, mobile_number_alt=, email_id=ravindra@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=sai, apartment_name=disck, street_name=gali no 3, landmark=noda, area=gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-30T18:30:00.000Z, serial_number=806565432411234, imei1=806565432411234, imei2=806565432411234, popurl=2025-11-30T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=ggggg]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest.createJobAPITest(CreateJobAPIJsonDataDrivenTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
       </class> <!-- com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest -->
       <class name="com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:14 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:57 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:14 IST" duration-ms="309" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:57 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:57 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:57 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:57 IST" duration-ms="230" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -603,8 +928,6 @@ at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.jav
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
@@ -629,66 +952,11 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:14 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:57 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:14 IST" duration-ms="277" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356910, imei1=876545654356910, imei2=876545654356910, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <500>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <500>.
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
-at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-at com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest.createJobAPITest(CreateJobAPIPoijiDataDrivenTest.java:28)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:14 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:14 IST" duration-ms="220" status="FAIL">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:57 IST" duration-ms="209" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -713,8 +981,6 @@ at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.jav
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
@@ -739,11 +1005,56 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:14 IST" duration-ms="2" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:57 IST" duration-ms="221" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356910, imei1=876545654356910, imei2=876545654356910, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest.createJobAPITest(CreateJobAPIPoijiDataDrivenTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:14 IST" duration-ms="220" status="FAIL">
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:57 IST" duration-ms="195" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -792,15 +1103,11 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:14 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:14 IST" duration-ms="221" status="FAIL">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:57 IST" duration-ms="205" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356906, imei1=876545654356906, imei2=876545654356906, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356907, imei1=876545654356907, imei2=876545654356907, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
               </value>
             </param>
           </params>
@@ -845,15 +1152,11 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:14 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@4082ba93]" started-at="2026-01-13T13:09:14 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-13T13:09:14 IST" duration-ms="359" status="FAIL">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest@9df564f]" started-at="2026-01-15T11:13:57 IST" name="createJobAPITest" data-provider="CreateJobAPIDataProvider" finished-at="2026-01-15T11:13:57 IST" duration-ms="226" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356907, imei1=876545654356907, imei2=876545654356907, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ravindra, last_name=yadav, mobile_number=9599153229, mobile_number_alt=, email_id=ravindra@gmail, email_id_alt=], customer_address=CustomerAddress[flat_number=52, apartment_name=Gwalior, street_name=3, landmark=Railway Station, area=Gautam Buddha Nagar, pincode=201301, country=India, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2025-11-03T18:30:00.000Z, serial_number=876545654356906, imei1=876545654356906, imei2=876545654356906, popurl=2025-11-03T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=phone or app crashed]]]]]>
               </value>
             </param>
           </params>
@@ -900,49 +1203,23 @@ at java.base/java.lang.Thread.run(Thread.java:840)
         </test-method> <!-- createJobAPITest -->
       </class> <!-- com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest -->
       <class name="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" started-at="2026-01-13T13:09:13 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:09:13 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" started-at="2026-01-15T11:13:57 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:57 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" started-at="2026-01-13T13:09:13 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:09:13 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" started-at="2026-01-15T11:13:57 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:57 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" started-at="2026-01-13T13:09:13 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelPoijiDataProvider" finished-at="2026-01-13T13:09:13 IST" duration-ms="25" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UserBean [username=iamsup, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(LoginAPIExcelFromPoijiDataDrivenTest.java:28)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" started-at="2026-01-15T11:13:57 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAPITest -->
-        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" started-at="2026-01-13T13:09:13 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelPoijiDataProvider" finished-at="2026-01-13T13:09:13 IST" duration-ms="18" status="FAIL">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" started-at="2026-01-15T11:13:57 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-15T11:13:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" started-at="2026-01-15T11:13:57 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelPoijiDataProvider" finished-at="2026-01-15T11:13:57 IST" duration-ms="33" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -950,14 +1227,17 @@ at java.base/java.lang.Thread.run(Thread.java:840)
               </value>
             </param>
           </params>
-          <exception class="java.lang.ClassCastException">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
+              <![CDATA[Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(LoginAPIExcelFromPoijiDataDrivenTest.java:28)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+
+at com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(LoginAPIExcelFromPoijiDataDrivenTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -972,15 +1252,11 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" started-at="2026-01-13T13:09:13 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:09:13 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" started-at="2026-01-13T13:09:13 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelPoijiDataProvider" finished-at="2026-01-13T13:09:13 IST" duration-ms="4" status="FAIL">
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" started-at="2026-01-15T11:13:57 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelPoijiDataProvider" finished-at="2026-01-15T11:13:57 IST" duration-ms="7" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -988,14 +1264,17 @@ at java.base/java.lang.Thread.run(Thread.java:840)
               </value>
             </param>
           </params>
-          <exception class="java.lang.ClassCastException">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
+              <![CDATA[Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(LoginAPIExcelFromPoijiDataDrivenTest.java:28)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+
+at com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(LoginAPIExcelFromPoijiDataDrivenTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1010,11 +1289,11 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAPITest -->
-        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" started-at="2026-01-13T13:09:13 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelPoijiDataProvider" finished-at="2026-01-13T13:09:13 IST" duration-ms="23" status="FAIL">
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" started-at="2026-01-15T11:13:57 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelPoijiDataProvider" finished-at="2026-01-15T11:13:57 IST" duration-ms="6" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1022,14 +1301,17 @@ at java.base/java.lang.Thread.run(Thread.java:840)
               </value>
             </param>
           </params>
-          <exception class="java.lang.ClassCastException">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')]]>
+              <![CDATA[Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class com.dataproviders.api.bean.UserBean cannot be cast to class com.api.request.model.UserCredentials (com.dataproviders.api.bean.UserBean and com.api.request.model.UserCredentials are in unnamed module of loader 'app')
-at com.api.services.AuthService.login(AuthService.java:22)
-at com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(LoginAPIExcelFromPoijiDataDrivenTest.java:28)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+
+at com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(LoginAPIExcelFromPoijiDataDrivenTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1044,25 +1326,66 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@4a003cbe]" started-at="2026-01-13T13:09:13 IST" name="setup" description="Initializing the Auth Service" finished-at="2026-01-13T13:09:13 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-      </class> <!-- com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest -->
-      <class name="com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@17fc391b]" started-at="2026-01-13T13:09:16 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@17fc391b]" started-at="2026-01-13T13:09:16 IST" name="createJobAPITest" data-provider="CreateJobAPIDBDataProvider" finished-at="2026-01-13T13:09:17 IST" duration-ms="301" status="FAIL">
+        <test-method signature="loginAPITest(com.dataproviders.api.bean.UserBean)[pri:0, instance:com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest@377949f1]" started-at="2026-01-15T11:13:57 IST" name="loginAPITest" description="Verifying if login api is working for FD user" data-provider="LoginAPIExcelPoijiDataProvider" finished-at="2026-01-15T11:13:57 IST" duration-ms="10" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=jatin, last_name=sharma, mobile_number=7046563552, mobile_number_alt=, email_id=jatinvsharma@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=c 304, apartment_name=Jupiter, street_name=MG road, landmark=Bangur Nagar, area=Goregaon West, pincode=411039, country=India, state=Maharashtra], customer_product=CustomerProduct[dop=2025-04-06, serial_number=16444528275127, imei1=16444528275127, imei2=16444528275127, popurl=2025-04-06T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Battery Issue]]]]]>
+                <![CDATA[UserBean [username=iamsup, password=password]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method login(UserCredentials) in the type AuthService is not applicable for the arguments (UserBean)
+
+at com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest.loginAPITest(LoginAPIExcelFromPoijiDataDrivenTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPITest -->
+      </class> <!-- com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest -->
+      <class name="com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@1a21f43f]" started-at="2026-01-15T11:13:59 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@1a21f43f]" started-at="2026-01-15T11:13:59 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@1a21f43f]" started-at="2026-01-15T11:13:59 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-15T11:13:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@1a21f43f]" started-at="2026-01-15T11:13:59 IST" name="createJobAPITest" data-provider="CreateJobAPIDBDataProvider" finished-at="2026-01-15T11:13:59 IST" duration-ms="222" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Lavonne, last_name=Deckow, mobile_number=904-289-7368, mobile_number_alt=, email_id=Kacie6@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=67, apartment_name=abc apartment, street_name=gandhi road, landmark=wer nagar, area=dum dum, pincode=7766889, country=India, state=West Bengal], customer_product=CustomerProduct[dop=2025-09-09, serial_number=11845369754174, imei1=11845369754174, imei2=11845369754174, popurl=2025-09-09T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Battery issue]]]]]>
               </value>
             </param>
           </params>
@@ -1076,8 +1399,7 @@ Expected status code <200> but was <500>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <200> but was <500>.
 
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.GeneratedConstructorAccessor88.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -1107,30 +1429,11 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@17fc391b]" started-at="2026-01-13T13:09:16 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@17fc391b]" started-at="2026-01-13T13:09:16 IST" name="createJobAPITest" data-provider="CreateJobAPIDBDataProvider" finished-at="2026-01-13T13:09:17 IST" duration-ms="955" status="PASS">
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@1a21f43f]" started-at="2026-01-15T11:13:59 IST" name="createJobAPITest" data-provider="CreateJobAPIDBDataProvider" finished-at="2026-01-15T11:13:59 IST" duration-ms="247" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Brenda, last_name=Skiles, mobile_number=280-594-4792, mobile_number_alt=, email_id=Kellen_Feil46@hotmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=c 304, apartment_name=Jupiter, street_name=MG road, landmark=Bangur Nagar, area=Goregaon West, pincode=411039, country=India, state=Maharashtra], customer_product=CustomerProduct[dop=2025-04-06, serial_number=10128620673737, imei1=10128620673737, imei2=10128620673737, popurl=2025-04-06T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Battery Issue]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobAPITest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@17fc391b]" started-at="2026-01-13T13:09:16 IST" name="setup" description="Instantiating CreateJob Service" finished-at="2026-01-13T13:09:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createJobAPITest(com.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@17fc391b]" started-at="2026-01-13T13:09:16 IST" name="createJobAPITest" data-provider="CreateJobAPIDBDataProvider" finished-at="2026-01-13T13:09:17 IST" duration-ms="637" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Brenda, last_name=Skiles, mobile_number=280-594-4792, mobile_number_alt=, email_id=Kellen_Feil46@hotmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=c 304, apartment_name=Jupiter, street_name=MG road, landmark=Bangur Nagar, area=Goregaon West, pincode=411039, country=India, state=Maharashtra], customer_product=CustomerProduct[dop=2025-04-06, serial_number=10128620673737, imei1=10128620673737, imei2=10128620673737, popurl=2025-04-06T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=2, remark=Battery Replaced1243]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Aurelia, last_name=Will, mobile_number=914-211-8976, mobile_number_alt=, email_id=Dandre_Langosh65@yahoo.com, email_id_alt=], customer_address=CustomerAddress[flat_number=67, apartment_name=abc apartment, street_name=gandhi road, landmark=wer nagar, area=dum dum, pincode=7766889, country=India, state=West Bengal], customer_product=CustomerProduct[dop=2025-09-09, serial_number=18114489851276, imei1=18114489851276, imei2=18114489851276, popurl=2025-09-09T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Battery issue]]]]]>
               </value>
             </param>
           </params>
@@ -1144,8 +1447,55 @@ Expected status code <200> but was <500>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <200> but was <500>.
 
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.GeneratedConstructorAccessor88.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest.createJobAPITest(CreateJobAPIDBDataDrivenTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.request.models.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest@1a21f43f]" started-at="2026-01-15T11:13:59 IST" name="createJobAPITest" data-provider="CreateJobAPIDBDataProvider" finished-at="2026-01-15T11:13:59 IST" duration-ms="224" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=rita, last_name=das, mobile_number=9990877886, mobile_number_alt=, email_id=klj@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=67, apartment_name=abc apartment, street_name=gandhi road, landmark=wer nagar, area=dum dum, pincode=7766889, country=India, state=West Bengal], customer_product=CustomerProduct[dop=2025-09-09, serial_number=11109543855841, imei1=11109543855841, imei2=11109543855841, popurl=2025-09-09T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Battery issue]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.GeneratedConstructorAccessor88.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)

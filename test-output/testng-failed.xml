@@ -6,33 +6,39 @@
       <class name="com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest">
         <methods>
           <include name="setup"/>
-          <include name="createJobAPITest" invocation-numbers="0 2"/>
+          <include name="createJobAPITest" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.api.tests.datadriven.CreateJobAPIDBDataDrivenTest -->
-      <class name="com.api.tests.datadriven.LoginAPIJsonDataDrivenTest">
+      <class name="com.api.tests.datadriven.CreateJobAPIDataDrivenTest">
         <methods>
-          <include name="loginAPITest" invocation-numbers="0 1 2 3"/>
+          <include name="createJobAPITest" invocation-numbers="0 1 2 3 4 5"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.api.tests.datadriven.LoginAPIJsonDataDrivenTest -->
-      <class name="com.api.tests.datadriven.LoginAPIDataDrivenTest">
-        <methods>
-          <include name="loginAPITest" invocation-numbers="0 1 2 3"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.api.tests.datadriven.LoginAPIDataDrivenTest -->
-      <class name="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest">
-        <methods>
-          <include name="setup"/>
-          <include name="loginAPITest" invocation-numbers="0 1 2 3"/>
-        </methods>
-      </class> <!-- com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest -->
+      </class> <!-- com.api.tests.datadriven.CreateJobAPIDataDrivenTest -->
       <class name="com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest">
         <methods>
           <include name="setup"/>
           <include name="createJobAPITest" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
       </class> <!-- com.api.tests.datadriven.CreateJobAPIPoijiDataDrivenTest -->
+      <class name="com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest">
+        <methods>
+          <include name="createJobAPITest" invocation-numbers="0 1 2 3"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.api.tests.datadriven.CreateJobAPIJsonDataDrivenTest -->
+      <class name="com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest">
+        <methods>
+          <include name="setup"/>
+          <include name="loginAPITest" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.api.tests.datadriven.LoginAPIExcelFromPoijiDataDrivenTest -->
+      <class name="com.api.tests.datadriven.LoginAPIDataDrivenTest">
+        <methods>
+          <include name="loginAPITest" invocation-numbers="0 1 2 3"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.api.tests.datadriven.LoginAPIDataDrivenTest -->
     </classes>
   </test> <!-- Inwarranty Flow - Data Driven Tests(failed) -->
 </suite> <!-- Failed suite [Phoenix API Test Suite] -->

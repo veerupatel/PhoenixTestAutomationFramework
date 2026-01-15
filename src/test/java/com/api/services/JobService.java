@@ -1,8 +1,8 @@
 package com.api.services;
 
 import com.api.constants.Roles;
+import com.api.request.models.CreateJobPayload;
 import com.api.utils.SpecUtil;
-import com.request.models.CreateJobPayload;
 
 import io.restassured.response.Response;
 

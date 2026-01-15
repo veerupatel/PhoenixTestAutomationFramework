@@ -12,8 +12,8 @@ import org.apache.logging.log4j.Logger;
 public class ConfigManager2 {
 
 	private static Properties prop;
-	private static String path = "config" + File.separator + "config.properties";
-	private static String env;
+	private static String path = "config" + File.separator + "config.qa.properties";
+	public static String env;
 
 	private static final Logger logger = LogManager.getLogger(AuthTokenProvider.class);
 

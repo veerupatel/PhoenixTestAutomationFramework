@@ -4,12 +4,12 @@ import java.sql.SQLException;
 
 import org.testng.Assert;
 
+import com.api.request.models.Customer;
 import com.database.model.CustomerAddressDBModel;
 import com.database.model.CustomerDBModel;
 import com.database.model.CustomerJobHeadModel;
 import com.database.model.CustomerMapJobProblemModel;
 import com.database.model.CustomerProductDBModel;
-import com.request.models.Customer;
 
 public class DemoDaoRunner {
 

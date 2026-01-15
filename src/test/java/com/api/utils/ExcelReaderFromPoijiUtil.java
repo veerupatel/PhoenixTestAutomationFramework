@@ -14,9 +14,9 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.api.request.models.UserCredentials;
 import com.dataproviders.api.bean.UserBean;
 import com.poiji.bind.Poiji;
-import com.request.models.UserCredentials;
 
 public class ExcelReaderFromPoijiUtil {
 	

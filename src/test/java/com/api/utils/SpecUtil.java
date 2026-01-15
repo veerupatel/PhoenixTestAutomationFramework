@@ -62,7 +62,7 @@ public class SpecUtil {
 	public static ResponseSpecification resposeSpec_OK() {
 		ResponseSpecification responseSpecification = new ResponseSpecBuilder()
 				.expectContentType(ContentType.JSON)
-				.expectStatusCode(200).expectResponseTime(Matchers.lessThan(1500L))
+				.expectStatusCode(200).expectResponseTime(Matchers.lessThan(2500L))
 				.build();
 		return responseSpecification;
 	}

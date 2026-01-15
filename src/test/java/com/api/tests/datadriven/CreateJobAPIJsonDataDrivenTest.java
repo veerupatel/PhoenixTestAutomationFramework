@@ -6,12 +6,10 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
+import com.api.request.models.CreateJobPayload;
 import com.api.services.JobService;
 import com.api.utils.SpecUtil;
-import com.dataproviders.api.bean.CreateJobBean;
-import com.request.models.CreateJobPayload;
 
-import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
 @Listeners(com.listeners.APITestListener.class)

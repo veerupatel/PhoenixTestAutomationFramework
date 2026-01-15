@@ -6,9 +6,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
+import com.api.request.models.Detail;
 import com.api.services.DashboardService;
 import com.api.utils.SpecUtil;
-import com.request.models.Detail;
 @Listeners(com.listeners.APITestListener.class)
 public class DetailsAPITest {
 

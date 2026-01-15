@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.testng.annotations.DataProvider;
 
+import com.api.request.models.CreateJobPayload;
+import com.api.request.models.UserCredentials;
 import com.api.utils.CSVreaderUtility;
 import com.api.utils.CreateJobBeanMapper;
 import com.api.utils.ExcelReaderFromPoijiUtil;
@@ -15,8 +17,6 @@ import com.api.utils.JsonReaderUtil;
 import com.database.dao.CreateJobPayloadDataDao;
 import com.dataproviders.api.bean.CreateJobBean;
 import com.dataproviders.api.bean.UserBean;
-import com.request.models.CreateJobPayload;
-import com.request.models.UserCredentials;
 
 public class DataProviderUtils {
 

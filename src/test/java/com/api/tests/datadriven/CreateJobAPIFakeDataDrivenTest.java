@@ -1,22 +1,16 @@
 package com.api.tests.datadriven;
 
 import org.hamcrest.Matchers;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
+import com.api.request.models.CreateJobPayload;
 import com.api.services.JobService;
 import com.api.utils.SpecUtil;
-import com.database.dao.CustomerDao;
-import com.database.model.CustomerDBModel;
-import com.dataproviders.api.bean.CreateJobBean;
-import com.request.models.CreateJobPayload;
 
-import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
-import io.restassured.response.ValidatableResponse;
 
 @Listeners(com.listeners.APITestListener.class)
 public class CreateJobAPIFakeDataDrivenTest {

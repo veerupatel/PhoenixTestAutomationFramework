@@ -9,12 +9,12 @@ import java.util.Random;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.api.request.models.CreateJobPayload;
+import com.api.request.models.Customer;
+import com.api.request.models.CustomerAddress;
+import com.api.request.models.CustomerProduct;
+import com.api.request.models.Problems;
 import com.github.javafaker.Faker;
-import com.request.models.CreateJobPayload;
-import com.request.models.Customer;
-import com.request.models.CustomerAddress;
-import com.request.models.CustomerProduct;
-import com.request.models.Problems;
 
 public class FakerDataGenerator {
 
