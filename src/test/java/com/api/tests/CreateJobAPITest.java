@@ -29,40 +29,52 @@ import com.database.model.CustomerJobHeadModel;
 import com.database.model.CustomerMapJobProblemModel;
 import com.database.model.CustomerProductDBModel;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
+
 @Listeners(com.listeners.APITestListener.class)
+@Epic("Job Management")
+@Feature("Create Job API")
 public class CreateJobAPITest {
 	Customer customer;
 	private CreateJobPayload createJobPayload;
 	CustomerProduct customerProduct;
 	CustomerAddress customerAddress;
 	Problems problems;
-	
+
 	private JobService jobService;
-	
+
 	@BeforeMethod(description = "Setting up the createJob instance")
 	public void setup() {
 		jobService = new JobService();
 		customer = new Customer("RajKumar", "Yadav", "9876543212", "", "rajkumar@gmail.com", "");
 		customerProduct = new CustomerProduct("2025-11-02T18:30:00.000Z", "760432345667985", "760432345667985",
 				"760432345667985", "2025-11-02T18:30:00.000Z", 1, 1);
-		customerAddress = new CustomerAddress("51", "Sai Apartment", "Noida Sector 71", "near Noida sector 52 metro Station",
-				"Gautam Buddha Nagar", "201301", "india", "Uttar Pradesh");
+		customerAddress = new CustomerAddress("51", "Sai Apartment", "Noida Sector 71",
+				"near Noida sector 52 metro Station", "Gautam Buddha Nagar", "201301", "india", "Uttar Pradesh");
 
-		 problems = new Problems(1, "Battery Issue");
+		problems = new Problems(1, "Battery Issue");
 		List<Problems> problemList = new ArrayList<Problems>();
 		problemList.add(problems);
 		createJobPayload = new CreateJobPayload(0, 2, 1, 1, customer, customerAddress, customerProduct, problemList);
 
 	}
-	
 
-	@Test(description = "Verifying if create job api is able to create Inwarranty job")
+	@Story("FD should be able to create job")
+	@Description("Verifying if FD is able to use create job api and Inwarranty job is created successfully")
+	@Severity(SeverityLevel.BLOCKER)
+	@Test(description = "Verifying if FD is able to use create job api and Inwarranty job is created successfully",groups = { "api", "regression",
+			"smoke" })
 	public void createJobAPITest() {
-		
-		CreateJobResponseModel createJobResponseModel = jobService.createJob(Roles.FD, createJobPayload)
-				.then().spec(SpecUtil.resposeSpec_OK())
+
+		CreateJobResponseModel createJobResponseModel = jobService.createJob(Roles.FD, createJobPayload).then()
+				.spec(SpecUtil.resposeSpec_OK())
 				.body(JsonSchemaValidator
 						.matchesJsonSchemaInClasspath("response-Schema/CreateJobAPIResponseSchema.json"))
 				.body("message", Matchers.equalTo("Job created successfully. "))

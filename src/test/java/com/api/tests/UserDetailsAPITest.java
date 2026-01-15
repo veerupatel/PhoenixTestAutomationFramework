@@ -6,17 +6,19 @@ import org.testng.annotations.Test;
 
 import com.api.constants.Roles;
 import com.api.services.UserService;
-import com.api.utils.AuthTokenProvider;
-import com.api.utils.ConfigManager2;
 import com.api.utils.SpecUtil;
 
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.http.Header;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import io.restassured.module.jsv.JsonSchemaValidator;
-import io.restassured.response.Response;
 
 @Listeners(com.listeners.APITestListener.class)
+@Epic("User Management")
+@Feature("User Details")
 public class UserDetailsAPITest {
 
 	private UserService userService;
@@ -26,7 +28,10 @@ public class UserDetailsAPITest {
 		userService = new UserService();
 	}
 
-	@Test
+	@Story("User Details should be shown")
+	@Description("Verifying if User Details API response is shown correctly")
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(description = "Verify if the Userdetails API response is shwon correctly", groups = { "api", "regression","smoke" })
 	public void UserDetailsAPITest() {
 		userService.userDetails(Roles.FD).then().spec(SpecUtil.resposeSpec_OK()).and().body(
 				JsonSchemaValidator.matchesJsonSchemaInClasspath("response-Schema/UserDetailsResponseSchema.json"));

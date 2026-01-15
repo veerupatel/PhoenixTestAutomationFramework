@@ -9,9 +9,17 @@ import com.api.constants.Roles;
 import com.api.services.DashboardService;
 import com.api.utils.SpecUtil;
 
-import io.restassured.RestAssured;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import io.restassured.module.jsv.JsonSchemaValidator;
+
 @Listeners(com.listeners.APITestListener.class)
+@Epic("Job Management")
+@Feature("Job Count")
 public class CountAPITest {
 
 	private DashboardService dashboardService;
@@ -21,7 +29,11 @@ public class CountAPITest {
 		dashboardService = new DashboardService();
 	}
 
-	@Test
+	@Story("Job Count data should shown correctly")
+	@Description("Verify if count API is giving response correctly")
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(description = "Verifying if Count API is working correctly for FD role", groups = { "api",
+			"regression", "smoke" })
 	public void verifyCountAPITest() {
 		dashboardService.count(Roles.FD).then().spec(SpecUtil.resposeSpec_OK())
 				.body("message", Matchers.equalTo("Success")).time(Matchers.lessThan(1000L))
@@ -35,9 +47,7 @@ public class CountAPITest {
 
 	@Test
 	public void countAPITest_MissingAuthToken() {
-		dashboardService.countWithNoAuth()
-		.then()
-				.spec(SpecUtil.resposeSpec_TEXT(401));
+		dashboardService.countWithNoAuth().then().spec(SpecUtil.resposeSpec_TEXT(401));
 	}
 
 }

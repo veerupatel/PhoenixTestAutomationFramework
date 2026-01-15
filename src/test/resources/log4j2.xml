@@ -5,16 +5,22 @@
                 pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %highlight{%5p} %c{1}::%M():%L - %m%n"/>
         </Console>
         
-        <File name="FileAppender" fileName="logs/application.log">
-            <PatternLayout
-                pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %highlight{%5p} %c{1}::%M():%L - %m%n"/>
-        </File>
+        <!-- RollingFile appender: daily rollover and compressed archived logs -->
+        <RollingFile name="RollingFile" fileName="logs/application.log"
+                     filePattern="logs/application-%d{yyyy-MM-dd}.log.gz" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %highlight{%5p} %c{1}::%M():%L - %m%n"/>
+            <Policies>
+                <!-- rotate daily -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
     </Appenders>
 
     <Loggers>
         <Root level="info">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="RollingFile"/>
         </Root>
     </Loggers>
 </Configuration>
